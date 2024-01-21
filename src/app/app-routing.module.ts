@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainPageComponent } from './main-page/main-page.component';
+import { MainComponent } from './main/main.component';
+import { PageInfoComponent } from './page-info/page-info.component';
+import { PageKnowledgeComponent } from './page-knowledge/page-knowledge.component';
+import { PageSkillsComponent } from './page-skills/page-skills.component';
+import { PageMsgComponent } from './page-msg/page-msg.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full' },
-  { path: 'main', component: MainPageComponent },
+  { path: 'main', component: MainComponent },
+  { path: 'infos', component: PageInfoComponent },
+  { path: 'skills', component: PageKnowledgeComponent },
+  { path: 'knowledge', component: PageSkillsComponent },
+  { path: 'msg', component: PageMsgComponent },
 ];
 
 @NgModule({
