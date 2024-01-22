@@ -7,3 +7,7 @@ html {
 .main-color {
   color: blueviolet;
 }
+
+.card {
+  min-width: 400px;
+}
