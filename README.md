@@ -1,6 +1,12 @@
 # RafaelMJ
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.11.
+## Este repositório contém o código fonte do meu website pessoal.
+
+Acesso: https://rafaelmj.xyz/
+
+# [Dev-Instructions] Angular
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
 
 ## Development server
 
