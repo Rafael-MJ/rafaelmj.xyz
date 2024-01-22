@@ -10,6 +10,6 @@
   max-height: 8vh;
 }
 
-.dropdown {
+.dropdown, .none-icon {
   margin: 0 75px;
 }
