@@ -2,10 +2,10 @@
   padding: 0px;
 }
 
-.navbar-brand {
-  max-height: 8vh;
-}
-
 .container-fluid {
   font-family: "Courier New", Courier, monospace;
+}
+
+#me-icon {
+  max-height: 8vh;
 }

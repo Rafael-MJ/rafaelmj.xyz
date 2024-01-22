@@ -1,30 +1,41 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+<nav class="navbar navbar-expand-md bg-body-tertiary sticky-top" data-bs-theme="dark">
   <div class="container-fluid fs-5">
-    <a href="#">
-      <img class="navbar-brand" src="../../assets/me.png" alt="" />
+    <a class="navbar-brand d-md-none" href="#">
+      <img class="navbar-brand" id="me-icon" src="../../assets/me.png" alt="" />
+      Rafael Jakubovsky
     </a>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"
-            >APRESENTAÇÃO</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="skills">COMPETÊNCIAS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="knowledge">CONHECIMENTO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="infos">INFOS</a>
-        </li>
-        <!--
-        <li class="nav-item">
-          <a class="nav-link" href="msg">MENSAGEM</a>
-        </li>
-        -->
-      </ul>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
+      <div class="offcanvas-body">
+          <a href="#">
+            <img class="navbar-brand" id="me-icon" src="../../assets/me.png" alt="" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >APRESENTAÇÃO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="skills">COMPETÊNCIAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="knowledge">CONHECIMENTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="infos">INFOS</a>
+              </li>
+              <!--
+              <li class="nav-item">
+                <a class="nav-link" href="msg">MENSAGEM</a>
+              </li>
+              -->
+            </ul>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
