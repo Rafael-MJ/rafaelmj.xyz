@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "rafael-mj:build:production"
+              "buildTarget": "rafael-mj:build:production"
             },
             "development": {
-              "browserTarget": "rafael-mj:build:development"
+              "buildTarget": "rafael-mj:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "rafael-mj:build"
+            "buildTarget": "rafael-mj:build"
           }
         },
         "test": {
