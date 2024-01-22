@@ -13,6 +13,7 @@ import { PageInfoComponent } from './page-info/page-info.component';
 import { NavDeviconsComponent } from './nav-devicons/nav-devicons.component';
 import { PageMsgComponent } from './page-msg/page-msg.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { InfoFooterComponent } from './info-footer/info-footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     PageKnowledgeComponent,
     PageInfoComponent,
     NavDeviconsComponent,
-    PageMsgComponent
+    PageMsgComponent,
+    InfoFooterComponent
   ],
   imports: [
     BrowserModule,
