@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'infos', component: PageInfoComponent },
   { path: 'skills', component: PageKnowledgeComponent },
   { path: 'knowledge', component: PageSkillsComponent },
-  { path: 'msg', component: PageMsgComponent },
+  // { path: 'msg', component: PageMsgComponent },
 ];
 
 @NgModule({
