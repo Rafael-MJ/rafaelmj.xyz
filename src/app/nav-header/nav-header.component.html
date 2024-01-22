@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top" data-bs-theme="dark">
   <div class="container-fluid fs-5">
     <a class="navbar-brand d-md-none" href="#">
-      <img class="navbar-brand none-icon" id="me-icon" src="../../assets/me.png" alt="" />
+      <img class="none-icon" id="me-icon" src="../../assets/me.png" alt="" />
     </a>
     <div ngbDropdown class="dropdown d-md-none">
       <button ngbDropdownToggle class="btn btn-secondary" type="button" id="dropdownMenuBtn" aria-expanded="false">
         |||
       </button>
-      <ul ngbDropdownMenu aria-labelledby="dropdownMenuBtn">
+      <ul class="dropdown-menu-end" ngbDropdownMenu aria-labelledby="dropdownMenuBtn">
         <li><a ngbDropdownItem routerLink="main">INÍCIO</a></li>
         <li><a ngbDropdownItem routerLink="skills">COMPETÊNCIAS</a></li>
         <li><a ngbDropdownItem routerLink="knowledge">CONHECIMENTO</a></li>
