@@ -2,11 +2,19 @@
   <div class="container-fluid fs-5">
     <a class="navbar-brand d-md-none" href="#">
       <img class="navbar-brand" id="me-icon" src="../../assets/me.png" alt="" />
-      Rafael Jakubovsky
+      RAFAEL
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div ngbDropdown class="dropdown d-md-none">
+      <button ngbDropdownToggle class="btn btn-secondary" type="button" id="dropdownMenuBtn" aria-expanded="false">
+        |||
+      </button>
+      <ul ngbDropdownMenu aria-labelledby="dropdownMenuBtn">
+        <li><a ngbDropdownItem routerLink="main">INÍCIO</a></li>
+        <li><a ngbDropdownItem routerLink="skills">COMPETÊNCIAS</a></li>
+        <li><a ngbDropdownItem routerLink="knowledge">CONHECIMENTO</a></li>
+        <li><a ngbDropdownItem routerLink="infos">INFOS</a></li>
+      </ul>
+    </div>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
       <div class="offcanvas-body">
           <a href="#">
