@@ -12,6 +12,7 @@ import { PageKnowledgeComponent } from './page-knowledge/page-knowledge.componen
 import { PageInfoComponent } from './page-info/page-info.component';
 import { NavDeviconsComponent } from './nav-devicons/nav-devicons.component';
 import { PageMsgComponent } from './page-msg/page-msg.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PageMsgComponent } from './page-msg/page-msg.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
