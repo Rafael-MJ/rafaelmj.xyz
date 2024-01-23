@@ -1,7 +1,15 @@
-<body class="text-bg-dark">
-  <app-nav-header></app-nav-header>
-  <router-outlet></router-outlet>
-  <app-nav-footer></app-nav-footer>
-  <app-nav-devicons></app-nav-devicons>
-  <app-info-footer></app-info-footer>
+<body>
+  <header>
+    <app-nav-header></app-nav-header>
+  </header>
+  
+  <main>
+    <router-outlet></router-outlet>
+    <app-nav-devicons></app-nav-devicons>
+    <app-info-footer></app-info-footer>
+  </main>
+
+  <footer>
+    <app-nav-footer></app-nav-footer>
+  </footer>
 </body>

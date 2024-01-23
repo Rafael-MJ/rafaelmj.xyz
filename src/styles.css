@@ -1,7 +1,11 @@
-body,
 html {
-  height: 100%;
   overflow-y: auto;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: rgb(30, 30, 30);
 }
 
 .main-color {
