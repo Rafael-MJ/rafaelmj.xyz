@@ -16,11 +16,11 @@ import { ScrSkillsComponent } from './components/screens/scr-skills/scr-skills.c
 
 const definedComponents = [
   // General \\
+  GenDeviconsComponent,
   GenInfoComponent,
   
   // Navs \\
   NavHeaderComponent,
-  GenDeviconsComponent,
   NavFooterComponent,
   
   // Screens \\

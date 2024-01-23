@@ -10,9 +10,14 @@ body {
 }
 
 .main-color {
-  color: blueviolet;
+  color: #9900bb;
+}
+
+.main-bg-color {
+  background-color: #171717;
 }
 
 .card {
   min-width: 390px;
+  box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.7);
 }
