@@ -14,3 +14,7 @@
   animation-timing-function: linear;
   cursor: grabbing;
 }
+
+nav {
+  min-width: 370px;
+}
