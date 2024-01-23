@@ -7,16 +7,16 @@ import { NavFooterComponent } from './components/navigators/nav-footer/nav-foote
 import { NavDeviconsComponent } from './components/navigators/nav-devicons/nav-devicons.component';
 import { RoutingModule } from './utils/routing.module';
 import { NavHeaderComponent } from './components/navigators/nav-header/nav-header.component';
-import { InfoFooterComponent } from './components/general/info-footer/info-footer.component';
-import { PageInfoComponent } from './components/screens/page-info/page-info.component';
-import { PageKnowledgeComponent } from './components/screens/page-knowledge/page-knowledge.component';
-import { PageMainComponent } from './components/screens/page-main/page-main.component';
-import { PageMsgComponent } from './components/screens/page-msg/page-msg.component';
-import { PageSkillsComponent } from './components/screens/page-skills/page-skills.component';
+import { GenInfoComponent } from './components/general/gen-info/gen-info.component';
+import { ScrInfoComponent } from './components/screens/scr-info/scr-info.component';
+import { ScrKnowledgeComponent } from './components/screens/scr-knowledge/scr-knowledge.component';
+import { ScrMainComponent } from './components/screens/scr-main/scr-main.component';
+import { ScrMsgComponent } from './components/screens/scr-msg/scr-msg.component';
+import { ScrSkillsComponent } from './components/screens/scr-skills/scr-skills.component';
 
 const definedComponents = [
   // General \\
-  InfoFooterComponent,
+  GenInfoComponent,
   
   // Navs \\
   NavHeaderComponent,
@@ -24,11 +24,11 @@ const definedComponents = [
   NavFooterComponent,
   
   // Screens \\
-  PageInfoComponent,
-  PageKnowledgeComponent,
-  PageMainComponent,
-  PageMsgComponent,
-  PageSkillsComponent
+  ScrInfoComponent,
+  ScrKnowledgeComponent,
+  ScrMainComponent,
+  ScrMsgComponent,
+  ScrSkillsComponent
   ];
 
 @NgModule({

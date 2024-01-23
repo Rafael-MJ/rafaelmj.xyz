@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageInfoComponent } from './page-info.component';
+import { ScrSkillsComponent } from './scr-skills.component';
 
-describe('PageInfoComponent', () => {
-  let component: PageInfoComponent;
-  let fixture: ComponentFixture<PageInfoComponent>;
+describe('ScrSkillsComponent', () => {
+  let component: ScrSkillsComponent;
+  let fixture: ComponentFixture<ScrSkillsComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PageInfoComponent]
+      declarations: [ScrSkillsComponent]
     });
-    fixture = TestBed.createComponent(PageInfoComponent);
+    fixture = TestBed.createComponent(ScrSkillsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

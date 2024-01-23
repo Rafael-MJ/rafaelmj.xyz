@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageMsgComponent } from './page-msg.component';
+import { ScrInfoComponent } from './scr-info.component';
 
-describe('PageMsgComponent', () => {
-  let component: PageMsgComponent;
-  let fixture: ComponentFixture<PageMsgComponent>;
+describe('ScrInfoComponent', () => {
+  let component: ScrInfoComponent;
+  let fixture: ComponentFixture<ScrInfoComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PageMsgComponent]
+      declarations: [ScrInfoComponent]
     });
-    fixture = TestBed.createComponent(PageMsgComponent);
+    fixture = TestBed.createComponent(ScrInfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

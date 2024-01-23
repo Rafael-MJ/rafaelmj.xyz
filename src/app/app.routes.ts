@@ -1,24 +1,24 @@
 import { Routes } from '@angular/router';
-import { PageMainComponent } from './components/screens/page-main/page-main.component';
-import { PageSkillsComponent } from './components/screens/page-skills/page-skills.component';
-import { PageKnowledgeComponent } from './components/screens/page-knowledge/page-knowledge.component';
-import { PageInfoComponent } from './components/screens/page-info/page-info.component';
+import { ScrMainComponent } from './components/screens/scr-main/scr-main.component';
+import { ScrSkillsComponent } from './components/screens/scr-skills/scr-skills.component';
+import { ScrKnowledgeComponent } from './components/screens/scr-knowledge/scr-knowledge.component';
+import { ScrInfoComponent } from './components/screens/scr-info/scr-info.component';
 
 export const routes: Routes = [{
-    path: '', component: PageMainComponent
+    path: '', component: ScrMainComponent
     },
 
     {
-    path: 'main',  component: PageMainComponent
+    path: 'main',  component: ScrMainComponent
     },
     {
-    path: 'skills', component: PageSkillsComponent
+    path: 'skills', component: ScrSkillsComponent
     },
     {
-    path: 'knowledge', component: PageKnowledgeComponent
+    path: 'knowledge', component: ScrKnowledgeComponent
     },
     {
-    path: 'infos', component: PageInfoComponent
+    path: 'infos', component: ScrInfoComponent
     } /* ,
     {
         path: 'msg', component: PageMsgComponent)

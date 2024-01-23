@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InfoFooterComponent } from './info-footer.component';
+import { GenInfoComponent } from './gen-info.component';
 
-describe('InfoFooterComponent', () => {
-  let component: InfoFooterComponent;
-  let fixture: ComponentFixture<InfoFooterComponent>;
+describe('GenInfoComponent', () => {
+  let component: GenInfoComponent;
+  let fixture: ComponentFixture<GenInfoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [InfoFooterComponent]
+      imports: [GenInfoComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(InfoFooterComponent);
+    fixture = TestBed.createComponent(GenInfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
