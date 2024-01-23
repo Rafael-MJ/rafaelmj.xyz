@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { NavFooterComponent } from './components/navigators/nav-footer/nav-footer.component';
-import { NavDeviconsComponent } from './components/navigators/nav-devicons/nav-devicons.component';
+import { GenDeviconsComponent } from './components/general/gen-devicons/gen-devicons.component';
 import { RoutingModule } from './utils/routing.module';
 import { NavHeaderComponent } from './components/navigators/nav-header/nav-header.component';
 import { GenInfoComponent } from './components/general/gen-info/gen-info.component';
@@ -20,7 +20,7 @@ const definedComponents = [
   
   // Navs \\
   NavHeaderComponent,
-  NavDeviconsComponent,
+  GenDeviconsComponent,
   NavFooterComponent,
   
   // Screens \\
