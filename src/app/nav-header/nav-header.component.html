@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top" data-bs-theme="dark">
   <div class="container-fluid fs-5">
-    <a class="navbar-brand d-md-none" href="#">
+    <a class="navbar-brand d-md-none" routerLink="/main">
       <img class="none-icon" id="me-icon" src="../../assets/me.png" alt="" />
     </a>
     <div ngbDropdown class="dropdown d-md-none">
@@ -8,32 +8,32 @@
         |||
       </button>
       <ul class="dropdown-menu-end" ngbDropdownMenu aria-labelledby="dropdownMenuBtn">
-        <li><a ngbDropdownItem routerLink="main">INÍCIO</a></li>
-        <li><a ngbDropdownItem routerLink="knowledge">COMPETÊNCIAS</a></li>
-        <li><a ngbDropdownItem routerLink="skills">HABILIDADES</a></li>
-        <li><a ngbDropdownItem routerLink="infos">INFOS</a></li>
+        <li><a ngbDropdownItem routerLink="/main">INÍCIO</a></li>
+        <li><a ngbDropdownItem routerLink="/knowledge">COMPETÊNCIAS</a></li>
+        <li><a ngbDropdownItem routerLink="/skills">HABILIDADES</a></li>
+        <li><a ngbDropdownItem routerLink="/infos">INFOS</a></li>
       </ul>
     </div>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
       <div class="offcanvas-body">
-          <a href="#">
+          <a  routerLink="/main">
             <img class="navbar-brand" id="me-icon" src="../../assets/me.png" alt="" />
           </a>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" routerLink="/main"
                   >APRESENTAÇÃO</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" routerLink="knowledge">COMPETÊNCIAS</a>
+                <a class="nav-link" routerLink="/knowledge">COMPETÊNCIAS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" routerLink="skills">HABILIDADES</a>
+                <a class="nav-link" routerLink="/skills">HABILIDADES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" routerLink="infos">INFOS</a>
+                <a class="nav-link" routerLink="/infos">INFOS</a>
               </li>
               <!--
               <li class="nav-item">
