@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { PageMainComponent } from './page-main/page-main.component';
-import { PageSkillsComponent } from './page-skills/page-skills.component';
-import { PageKnowledgeComponent } from './page-knowledge/page-knowledge.component';
-import { PageInfoComponent } from './page-info/page-info.component';
+import { PageMainComponent } from './components/screens/page-main/page-main.component';
+import { PageSkillsComponent } from './components/screens/page-skills/page-skills.component';
+import { PageKnowledgeComponent } from './components/screens/page-knowledge/page-knowledge.component';
+import { PageInfoComponent } from './components/screens/page-info/page-info.component';
 
 export const routes: Routes = [{
     path: '', component: PageMainComponent

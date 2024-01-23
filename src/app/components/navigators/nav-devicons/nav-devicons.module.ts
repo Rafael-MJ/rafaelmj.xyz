@@ -1,13 +1,12 @@
+import { NavDeviconsComponent } from './nav-devicons.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { NavHeaderComponent } from './nav-header.component';
+import { RoutingModule } from '../../../utils/routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { RoutingModule } from '../routing.module';
 
 @NgModule({
   declarations: [
-    NavHeaderComponent
+    NavDeviconsComponent
   ],
   imports: [
     CommonModule,
@@ -15,10 +14,9 @@ import { RoutingModule } from '../routing.module';
     NgbModule
   ],
   exports: [
-    NavHeaderComponent
+    NavDeviconsComponent
   ],
   providers: [],
-  bootstrap: [NavHeaderComponent]
+  bootstrap: [NavDeviconsComponent]
 })
-
-export class HeaderModule { }
+export class NavDevIconsModule { }

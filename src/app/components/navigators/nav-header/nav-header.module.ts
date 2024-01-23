@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { NavFooterComponent } from './nav-footer.component';
-import { RoutingModule } from '../routing.module';
+import { NavHeaderComponent } from './nav-header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RoutingModule } from '../../../utils/routing.module';
 
 @NgModule({
   declarations: [
-    NavFooterComponent
+    NavHeaderComponent
   ],
   imports: [
     CommonModule,
@@ -15,10 +15,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule
   ],
   exports: [
-    NavFooterComponent
+    NavHeaderComponent
   ],
   providers: [],
-  bootstrap: [NavFooterComponent]
+  bootstrap: [NavHeaderComponent]
 })
 
-export class FooterModule { }
+export class HeaderModule { }

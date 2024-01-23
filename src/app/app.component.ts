@@ -1,11 +1,11 @@
-import { InfoFooterModule } from './info-footer/info-footer.module';
+import { InfoFooterModule } from './components/general/info-footer/info-footer.module';
 import { Component } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { HeaderModule } from './nav-header/nav-header.module';
-import { NavDevIconsModule } from './nav-devicons/nav-devicons.module';
-import { FooterModule } from './nav-footer/nav-footer.module';
+import { HeaderModule } from './components/navigators/nav-header/nav-header.module';
+import { NavDevIconsModule } from './components/navigators/nav-devicons/nav-devicons.module';
+import { FooterModule } from './components/navigators/nav-footer/nav-footer.module';
 
 @Component({
   selector: 'app-root',
