@@ -13,6 +13,7 @@ import { ScrKnowledgeComponent } from './components/screens/scr-knowledge/scr-kn
 import { ScrMainComponent } from './components/screens/scr-main/scr-main.component';
 import { ScrMsgComponent } from './components/screens/scr-msg/scr-msg.component';
 import { ScrSkillsComponent } from './components/screens/scr-skills/scr-skills.component';
+import { ScrNotfoundComponent } from './components/screens/scr-notfound/scr-notfound.component';
 
 const definedComponents = [
   // General \\
@@ -28,7 +29,8 @@ const definedComponents = [
   ScrKnowledgeComponent,
   ScrMainComponent,
   ScrMsgComponent,
-  ScrSkillsComponent
+  ScrSkillsComponent,
+  ScrNotfoundComponent
   ];
 
 @NgModule({

@@ -3,6 +3,7 @@ import { ScrMainComponent } from './components/screens/scr-main/scr-main.compone
 import { ScrSkillsComponent } from './components/screens/scr-skills/scr-skills.component';
 import { ScrKnowledgeComponent } from './components/screens/scr-knowledge/scr-knowledge.component';
 import { ScrInfoComponent } from './components/screens/scr-info/scr-info.component';
+import { ScrNotfoundComponent } from './components/screens/scr-notfound/scr-notfound.component';
 
 export const routes: Routes = [{
     path: '', component: ScrMainComponent
@@ -19,10 +20,10 @@ export const routes: Routes = [{
     },
     {
     path: 'infos', component: ScrInfoComponent
-    } /* ,
+    }, /* ,
     {
         path: 'msg', component: PageMsgComponent)
-    } ,
+    } , */
 
-    { path: '**', component: NotFoundComponent } */
+    { path: '**', component: ScrNotfoundComponent } 
   ];
