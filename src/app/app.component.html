@@ -2,9 +2,10 @@
   <header>
     <app-nav-header></app-nav-header>
   </header>
-  
+
   <main>
-    <router-outlet></router-outlet>
+    <router-outlet (activate)="componentAdded($event)"></router-outlet>
+    <app-gen-arrows></app-gen-arrows>
     <app-gen-devicons></app-gen-devicons>
     <app-gen-info></app-gen-info>
   </main>

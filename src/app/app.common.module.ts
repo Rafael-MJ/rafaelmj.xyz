@@ -14,16 +14,18 @@ import { ScrMainComponent } from './components/screens/scr-main/scr-main.compone
 import { ScrMsgComponent } from './components/screens/scr-msg/scr-msg.component';
 import { ScrSkillsComponent } from './components/screens/scr-skills/scr-skills.component';
 import { ScrNotfoundComponent } from './components/screens/scr-notfound/scr-notfound.component';
+import { GenArrowsComponent } from './components/general/gen-arrows/gen-arrows.component';
 
 const definedComponents = [
   // General \\
   GenDeviconsComponent,
   GenInfoComponent,
-  
+  GenArrowsComponent,
+
   // Navs \\
   NavHeaderComponent,
   NavFooterComponent,
-  
+
   // Screens \\
   ScrInfoComponent,
   ScrKnowledgeComponent,
