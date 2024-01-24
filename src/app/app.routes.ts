@@ -6,7 +6,7 @@ import { ScrInfoComponent } from './components/screens/scr-info/scr-info.compone
 import { ScrNotfoundComponent } from './components/screens/scr-notfound/scr-notfound.component';
 
 export const routes: Routes = [{
-    path: '', component: ScrMainComponent
+    path: '', pathMatch: 'full', redirectTo: 'main'
     },
 
     {
