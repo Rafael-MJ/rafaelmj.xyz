@@ -1,0 +1,17 @@
+.main-color {
+color: #9900bb !important;
+}
+
+.border-main-color {
+    border-color: #9900bb !important;
+}
+
+.main-bg-color {
+background-color: #171717;
+}
+
+.card {
+min-width: 380px;
+box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.55);
+text-align: justify !important;
+}
