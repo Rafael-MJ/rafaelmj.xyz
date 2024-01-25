@@ -2,8 +2,9 @@
     border: none;
     font-weight: bold;
 }
+
 .arrow:hover {
-    background-color: #660055 !important;
+    background-color: #660055;
 }
 
 .arrow:disabled {
