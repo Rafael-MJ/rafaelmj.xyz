@@ -1,16 +1,6 @@
-<body>
-  <header>
-    <app-nav-header></app-nav-header>
-  </header>
-
-  <main>
-    <router-outlet (activate)="componentAdded($event)"></router-outlet>
-    <app-gen-arrows></app-gen-arrows>
-    <app-gen-devicons></app-gen-devicons>
-    <app-gen-info></app-gen-info>
-  </main>
-
-  <footer>
-    <app-nav-footer></app-nav-footer>
-  </footer>
-</body>
+<app-nav-header></app-nav-header>
+<router-outlet (activate)="componentAdded($event)"></router-outlet>
+<app-gen-arrows></app-gen-arrows>
+<app-gen-devicons></app-gen-devicons>
+<app-gen-info></app-gen-info>
+<app-nav-footer></app-nav-footer>

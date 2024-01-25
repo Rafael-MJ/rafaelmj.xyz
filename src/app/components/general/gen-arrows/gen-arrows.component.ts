@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { currentComponent } from 'src/app/app.component';
 
 let lockLeftArrow = false;
@@ -20,19 +20,22 @@ export const setArrowState = (index: number, enabled: boolean) => {
 
 export class GenArrowsComponent {
 
+  @ViewChild('LeftArrow') leftArrow!: ElementRef;
+  @ViewChild('RightArrow') rightArrow!: ElementRef;
+
   constructor(private router: Router) { }
 
-  ngAfterContentChecked() {
+  ngAfterViewInit() {
     if(lockLeftArrow && lockRightArrow) {
-      document.getElementById('left-arrow')?.setAttribute("disabled", "true");
-      document.getElementById('right-arrow')?.setAttribute("disabled", "true");
+      this.leftArrow.nativeElement.disabled = true;
+      this.rightArrow.nativeElement.disabled = true;
     } else if (lockLeftArrow) {
-      document.getElementById('left-arrow')?.setAttribute("disabled", "true");
+      this.leftArrow.nativeElement.disabled = true;
     } else if (lockRightArrow) {
-      document.getElementById('right-arrow')?.setAttribute("disabled", "true");
+      this.rightArrow.nativeElement.disabled = true;
     } else {
-      document.getElementById('left-arrow')?.removeAttribute("disabled");
-      document.getElementById('right-arrow')?.removeAttribute("disabled");
+      this.leftArrow.nativeElement.disabled = false;
+      this.rightArrow.nativeElement.disabled = false;
     }
   }
 
