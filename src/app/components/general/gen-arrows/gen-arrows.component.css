@@ -1,10 +1,13 @@
+/* Only NOT Mobile */
+@media only screen and (hover:hover) and (pointer:fine) {
+    .arrow:hover {
+        background-color: #660055 !important;
+    }
+}
+
 .arrow {
     border: none;
     font-weight: bold;
-}
-
-.arrow:hover {
-    background-color: #660055;
 }
 
 .arrow:disabled {

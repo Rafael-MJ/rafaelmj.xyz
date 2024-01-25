@@ -1,3 +1,17 @@
+/* Only NOT Mobile */
+@media only screen and (hover:hover) and (pointer:fine) {
+    .card:hover {
+        transform: scale(1.01);
+        cursor: default;
+    }
+}
+
+.card {
+    min-width: 380px;
+    box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.55);
+    text-align: justify !important;
+}
+
 .main-color {
 color: #9900bb !important;
 }
@@ -12,10 +26,4 @@ color: #9900bb !important;
 
 .main-bg-color {
 background-color: #171717;
-}
-
-.card {
-min-width: 380px;
-box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.55);
-text-align: justify !important;
 }
