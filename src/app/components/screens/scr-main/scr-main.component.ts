@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import { ScreenSupport } from 'src/app/utils/ScreensUtil';
-import { Screens } from 'src/app/utils/ScreensUtil';
+import { ScreenSupport } from 'src/app/utils/ScreenUtils';
+import { Screens } from 'src/app/utils/ScreenUtils';
 
 @Component({
   selector: 'app-scr-main',

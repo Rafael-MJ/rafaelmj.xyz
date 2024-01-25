@@ -1,38 +1,39 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { ScreenSupport } from 'src/app/utils/ScreensUtil';
-import { Screens } from 'src/app/utils/ScreensUtil';
+import { ScreenSupport } from 'src/app/utils/ScreenUtils';
+import { Screens } from 'src/app/utils/ScreenUtils';
 
 let getCurrComponent: Screens;
 let lockLeftArrow = false;
 let lockRightArrow = false;
 
-export const setArrowState = (index: number, enabled: boolean) => {
+export const setArrowState = (index: number, disabled: boolean) => {
   switch (index) {
-    case 0: lockLeftArrow = enabled; break;
-    case 1: lockRightArrow = enabled; break;
+    case 0: lockLeftArrow = disabled; break;
+    case 1: lockRightArrow = disabled; break;
   }
 }
 
 export const updateEnabledArrows = () => {
-
   getCurrComponent = ScreenSupport.getCurrentScreen()
 
   switch (getCurrComponent) {
       case Screens.Main:
-      setArrowState(0, true);
+        setArrowState(0, true);
+        setArrowState(1, false);
       break;
       case Screens.Info:
-      setArrowState(1, true);
+        setArrowState(0, false);
+        setArrowState(1, true);
       break;
       case Screens.NotFound:
-      setArrowState(0, true);
-      setArrowState(1, true);
+        setArrowState(0, true);
+        setArrowState(1, true);
       break;
       default:
-      setArrowState(0, false);
-      setArrowState(1, false);
+        setArrowState(0, false);
+        setArrowState(1, false);
       break;
   }
 }
@@ -44,7 +45,6 @@ export const updateEnabledArrows = () => {
 })
 
 export class GenArrowsComponent {
-
   @ViewChild('LeftArrow') leftArrow!: ElementRef;
   @ViewChild('RightArrow') rightArrow!: ElementRef;
 
@@ -52,16 +52,24 @@ export class GenArrowsComponent {
 
   ngAfterContentChecked() {
     if (this.leftArrow && this.rightArrow) {
+      const leftArrowElement = this.leftArrow.nativeElement;
+      const rightArrowElement = this.rightArrow.nativeElement;
+
       if(lockLeftArrow && lockRightArrow) {
-        this.leftArrow.nativeElement.disabled = true;
-        this.rightArrow.nativeElement.disabled = true;
-      } else if (lockLeftArrow) {
-        this.leftArrow.nativeElement.disabled = true;
-      } else if (lockRightArrow) {
-        this.rightArrow.nativeElement.disabled = true;
+        leftArrowElement.disabled = true;
+        rightArrowElement.disabled = true;
+
+      } else if (lockLeftArrow && !lockRightArrow) {
+        leftArrowElement.disabled = true;
+        rightArrowElement.disabled = false;
+
+      } else if (lockRightArrow && !lockLeftArrow) {
+        rightArrowElement.disabled = true;
+        leftArrowElement.disabled = false;
+
       } else {
-        this.leftArrow.nativeElement.disabled = false;
-        this.rightArrow.nativeElement.disabled = false;
+        leftArrowElement.disabled = false;
+        rightArrowElement.disabled = false;
       }
     }
   }
