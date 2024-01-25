@@ -5,7 +5,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { NavFooterComponent } from './components/navigators/nav-footer/nav-footer.component';
 import { GenDeviconsComponent } from './components/general/gen-devicons/gen-devicons.component';
-import { RoutingModule } from './utils/routing.module';
+import { RoutingModule } from './utils/RoutingUtil';
 import { NavHeaderComponent } from './components/navigators/nav-header/nav-header.component';
 import { GenInfoComponent } from './components/general/gen-info/gen-info.component';
 import { ScrInfoComponent } from './components/screens/scr-info/scr-info.component';
