@@ -6,6 +6,10 @@
     }
 }
 
+.navbar a {
+    user-select: none;
+}
+
 .card {
     min-width: 380px;
     box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.55);

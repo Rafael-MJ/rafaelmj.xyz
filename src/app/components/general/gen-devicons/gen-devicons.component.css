@@ -7,6 +7,10 @@
   }
 }
 
+.animated-icon {
+  user-select: none;
+}
+
 .animated-icon:hover {
   animation-name: rotateThis;
   animation-duration: 1.25s;
