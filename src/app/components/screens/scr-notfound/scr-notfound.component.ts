@@ -11,7 +11,7 @@ import { Screens } from 'src/app/utils/ScreenUtils';
 export class ScrNotfoundComponent {
   ngOnInit() {
     if (typeof window !== 'undefined') {
-      ScreenSupport.setCurrentScreen(Screens.NotFound);
+      ScreenSupport.setCurrentScreen(null);
     }
   }
 }

@@ -6,7 +6,6 @@ export enum ScreensSide {
 }
 
 export enum Screens {
-    NotFound = 'notfound',
     Main = 'main',
     Knowledge = 'knowledge',
     Skills = 'skills',
@@ -16,10 +15,10 @@ export enum Screens {
 
 const screenOrder = Object.values(Screens); // 'enum Screens' array (same declarated order).
 
-let currentScreen: Screens = Screens.NotFound;
+let currentScreen: Screens | null;
 
 export class ScreenSupport {
-    public static setCurrentScreen(screen : Screens) {
+    public static setCurrentScreen(screen : Screens | null) {
         currentScreen = screen;
         updateEnabledArrows();
     }
@@ -28,17 +27,23 @@ export class ScreenSupport {
         return currentScreen;
     }
 
-    public static getScreen(screen: Screens, side: ScreensSide) {
-        let pScreenIndex = screenOrder.indexOf(screen);
+    public static getScreen(screen: Screens | null, side: ScreensSide) {
+        let pScreenIndex: number;
 
-        switch(side) {
-            case ScreensSide.Left:
-                pScreenIndex = pScreenIndex - 1;
-                break;
-            case ScreensSide.Right:
-                pScreenIndex = pScreenIndex + 1;
-                break;
+        if (screen) {
+            pScreenIndex = screenOrder.indexOf(screen);
+
+            switch(side) {
+                case ScreensSide.Left:
+                    pScreenIndex = pScreenIndex - 1;
+                    break;
+                case ScreensSide.Right:
+                    pScreenIndex = pScreenIndex + 1;
+                    break;
+            }
+            return screenOrder[pScreenIndex] as string;
+        } else {
+            return null;
         }
-        return screenOrder[pScreenIndex] as string;
     }
 }

@@ -17,6 +17,8 @@ export class NavHeaderComponent {
   ngAfterViewChecked() {
     let currentScreen = ScreenSupport.getCurrentScreen();
 
+    this.disableEffects();
+
     switch(currentScreen) {
       case Screens.Main:
         this.htmlElements[0].nativeElement.classList.add('enabled');
@@ -31,6 +33,12 @@ export class NavHeaderComponent {
         this.htmlElements[3].nativeElement.classList.add('enabled');
         break;
     }
+  }
+
+  disableEffects () {
+      for (let i = 0; i < this.htmlElements.length; i++) {
+        this.htmlElements[i].nativeElement.classList.remove('enabled');
+      }
   }
 
   enableEffect(index: number) {
