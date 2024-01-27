@@ -1,7 +1,7 @@
 <nav class="navbar border-bottom border-main-color navbar-expand-md bg-body-tertiary sticky-top" data-bs-theme="dark">
   <div class="container-fluid fs-5">
     <a class="navbar-brand d-md-none" routerLink="/main">
-      <img class="none-icon" id="me-icon" src="../../assets/me.png" alt="" />
+      <img id="me-icon" src="../../assets/me/me-icon.png" alt="" />
     </a>
     <div ngbDropdown class="dropdown d-md-none">
       <button ngbDropdownToggle class="btn btn-secondary" type="button" id="dropdownMenuBtn" aria-expanded="false">
@@ -12,12 +12,13 @@
         <li><a ngbDropdownItem routerLink="/knowledge">COMPETÊNCIAS</a></li>
         <li><a ngbDropdownItem routerLink="/skills">HABILIDADES</a></li>
         <li><a ngbDropdownItem routerLink="/infos">INFOS</a></li>
+        <li><a ngbDropdownItem routerLink="/curriculum">CURRÍCULO</a></li>
       </ul>
     </div>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
       <div class="offcanvas-body">
           <a  routerLink="/main">
-            <img class="navbar-brand" id="me-icon" src="../../assets/me.png" alt="" />
+            <img class="navbar-brand" id="me-icon" src="../../assets/me/me-icon.png" alt="" />
           </a>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
@@ -37,14 +38,12 @@
                 <a #n3 (click)="enableEffect(3)" class="nav-link" routerLink="/infos">INFOS</a>
                 <span></span>
               </li>
-              <!--
-              <li class="nav-item">
-                <a class="nav-link" href="msg">MENSAGEM</a>
-              </li>
-              -->
             </ul>
+          </div>
+          <a class="navbar-brand" routerLink="/curriculum">
+            <img id="curriculum-icon" src="../../../../assets/icons/icon-curriculum.png" #n3 (click)="enableEffect(4)" class="nav-link" />
+          </a>
         </div>
       </div>
-    </div>
   </div>
 </nav>

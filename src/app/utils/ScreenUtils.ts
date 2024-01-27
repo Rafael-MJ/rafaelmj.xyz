@@ -11,7 +11,7 @@ export enum Screens {
     Knowledge = 'knowledge',
     Skills = 'skills',
     Info = 'infos',
-    // Msg = 'msg'
+    Curriculum = 'curriculum'
 }
 
 const screenOrder = Object.values(Screens); // 'enum Screens' array (same declarated order).

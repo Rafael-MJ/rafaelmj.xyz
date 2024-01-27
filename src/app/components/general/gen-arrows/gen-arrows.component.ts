@@ -23,7 +23,7 @@ export const updateEnabledArrows = () => {
         setArrowState(ScreensSide.Left, true);
         setArrowState(ScreensSide.Right, false);
       break;
-      case Screens.Info:
+      case Screens.Curriculum:
         setArrowState(ScreensSide.Left, false);
         setArrowState(ScreensSide.Right, true);
       break;

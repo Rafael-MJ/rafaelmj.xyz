@@ -49,3 +49,12 @@
 #me-icon {
   max-height: 8vh;
 }
+
+#curriculum-icon {
+  width: 6.5vh;
+}
+
+#curriculum-icon:hover {
+  transform: scale(0.9);
+  transition: transform 0.2s ease;
+}

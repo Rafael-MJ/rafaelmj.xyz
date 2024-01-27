@@ -5,6 +5,7 @@ import { ScrSkillsComponent } from './components/screens/scr-skills/scr-skills.c
 import { ScrKnowledgeComponent } from './components/screens/scr-knowledge/scr-knowledge.component';
 import { ScrInfoComponent } from './components/screens/scr-info/scr-info.component';
 import { ScrNotfoundComponent } from './components/screens/scr-notfound/scr-notfound.component';
+import { ScrCurriculumComponent } from './components/screens/scr-curriculum/scr-curriculum.component';
 
 export const routes: Routes = [{
     path: '', pathMatch: 'full', redirectTo: 'main'
@@ -21,10 +22,10 @@ export const routes: Routes = [{
     },
     {
     path: 'infos', component: ScrInfoComponent
-    }, /* ,
+    },
     {
-        path: 'msg', component: PageMsgComponent)
-    } , */
+    path: 'curriculum', component: ScrCurriculumComponent
+    },
 
     { path: '**', component: ScrNotfoundComponent } 
   ];
