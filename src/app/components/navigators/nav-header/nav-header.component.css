@@ -2,6 +2,46 @@
   padding: 0px;
 }
 
+.nav-item {
+  position: relative;
+}
+
+.nav-item a {
+  transition: 0.5s;
+}
+
+.nav-item a:hover {
+  color: #9900bb !important;
+}
+
+.nav-item span {
+  position: absolute;
+  top: -22%;
+  width: 92%;
+  left: +4%;
+  right: -4%;
+  height: 100%;
+  z-index: -1;
+  border-bottom: 2px solid #9900bb;
+  border-radius: 5px;
+  transform: scale(0) translateY(50px);
+  transition: transform 0.25s ease;
+  opacity: 0;
+}
+
+.nav-item:hover span {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+.disabled {
+  color: #ddd !important;
+}
+
+.enabled {
+  color: #fff !important;
+}
+
 .container-fluid {
   font-family: "Courier New", Courier, monospace;
 }
