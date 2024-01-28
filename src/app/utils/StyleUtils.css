@@ -7,6 +7,10 @@
     }
 }
 
+.navigator {
+    min-height: 7.5vh;
+}
+
 .navbar a {
     user-select: none;
 }
