@@ -21,7 +21,7 @@
     transform: translate(-50%, -50%);
 }
 
-h2, h4 {
+h2, h3 {
     font-weight: 500;
 }
 
@@ -29,6 +29,6 @@ h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h4 {
+h3 {
     font-family: "Courier New", Courier, monospace;
 }
