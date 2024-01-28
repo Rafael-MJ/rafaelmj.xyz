@@ -1,9 +1,3 @@
-@media screen and (max-width: 965px) {
-  nav {
-    min-height: 120px !important;
-  }
-}
-
 @keyframes rotateThis {
   from {
     transform: scale(1.5) rotate(0deg);
