@@ -17,23 +17,9 @@ import { ScrNotfoundComponent } from './components/screens/scr-notfound/scr-notf
 import { GenArrowsComponent } from './components/general/gen-arrows/gen-arrows.component';
 
 const definedComponents = [
-  // General \\
-  GenDeviconsComponent,
-  GenInfoComponent,
-  GenArrowsComponent,
-
-  // Navs \\
   NavHeaderComponent,
   NavFooterComponent,
-
-  // Screens \\
-  ScrInfoComponent,
-  ScrKnowledgeComponent,
-  ScrAboutComponent,
-  ScrCurriculumComponent,
-  ScrSkillsComponent,
-  ScrNotfoundComponent
-  ];
+];
 
 @NgModule({
   declarations: [
