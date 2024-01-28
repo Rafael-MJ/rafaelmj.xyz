@@ -6,10 +6,12 @@ describe('ScrMainComponent', () => {
   let component: ScrMainComponent;
   let fixture: ComponentFixture<ScrMainComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [ScrMainComponent]
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [ScrMainComponent]
+    })
+    .compileComponents();
+
     fixture = TestBed.createComponent(ScrMainComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

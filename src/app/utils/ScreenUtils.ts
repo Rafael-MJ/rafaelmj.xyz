@@ -1,5 +1,3 @@
-import { updateEnabledArrows } from "../components/general/gen-arrows/gen-arrows.component";
-
 export enum ScreensSide {
     Left,
     Right
@@ -7,6 +5,7 @@ export enum ScreensSide {
 
 export enum Screens {
     Main = 'main',
+    About = 'about',
     Knowledge = 'knowledge',
     Skills = 'skills',
     Info = 'infos',
@@ -20,7 +19,6 @@ let currentScreen: Screens | null;
 export class ScreenSupport {
     public static setCurrentScreen(screen : Screens | null) {
         currentScreen = screen;
-        updateEnabledArrows();
     }
 
     public static getCurrentScreen() {

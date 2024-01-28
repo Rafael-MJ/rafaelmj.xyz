@@ -1,46 +1,16 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { commonModuleUtils } from 'src/app/utils/RoutingUtils';
 
 import { ScreenSupport, ScreensSide } from 'src/app/utils/ScreenUtils';
 import { Screens } from 'src/app/utils/ScreenUtils';
 
-let getCurrComponent: Screens | null;
-let lockLeftArrow = false;
-let lockRightArrow = false;
-
-export const setArrowState = (side: ScreensSide, disabled: boolean) => {
-  switch (side) {
-    case ScreensSide.Left: lockLeftArrow = disabled; break;
-    case ScreensSide.Right: lockRightArrow = disabled; break;
-  }
-}
-
-export const updateEnabledArrows = () => {
-  getCurrComponent = ScreenSupport.getCurrentScreen();
-
-  const getScreenLeft = ScreenSupport.getScreen(getCurrComponent, ScreensSide.Left);
-  const getScreenRight = ScreenSupport.getScreen(getCurrComponent, ScreensSide.Right);
-
-  if (getCurrComponent == null) {
-    setArrowState(ScreensSide.Left, true);
-    setArrowState(ScreensSide.Right, true);
-
-  } else if (getScreenLeft == null) {
-    setArrowState(ScreensSide.Left, true);
-    setArrowState(ScreensSide.Right, false);
-
-  } else if (getScreenRight == null) {
-    setArrowState(ScreensSide.Left, false);
-    setArrowState(ScreensSide.Right, true);
-
-  } else {
-    setArrowState(ScreensSide.Left, false);
-    setArrowState(ScreensSide.Right, false);
-  }
-}
-
 @Component({
   selector: 'app-gen-arrows',
+  standalone: true,
+  imports: [
+    commonModuleUtils
+  ],
   templateUrl: './gen-arrows.component.html',
   styleUrl: './gen-arrows.component.css'
 })
@@ -50,6 +20,41 @@ export class GenArrowsComponent {
   @ViewChild('RightArrow') rightArrow!: ElementRef;
 
   constructor(private router: Router) { }
+
+  getCurrComponent: Screens | null = null;
+  lockLeftArrow = false;
+  lockRightArrow = false;
+
+  initData() {
+      this.getCurrComponent = ScreenSupport.getCurrentScreen();
+
+      const getScreenLeft = ScreenSupport.getScreen(this.getCurrComponent, ScreensSide.Left);
+      const getScreenRight = ScreenSupport.getScreen(this.getCurrComponent, ScreensSide.Right);
+
+      if (this.getCurrComponent == null) {
+        this.setArrowState(ScreensSide.Left, true);
+        this.setArrowState(ScreensSide.Right, true);
+
+      } else if (getScreenLeft == null) {
+        this.setArrowState(ScreensSide.Left, true);
+        this.setArrowState(ScreensSide.Right, false);
+
+      } else if (getScreenRight == null) {
+        this.setArrowState(ScreensSide.Left, false);
+        this.setArrowState(ScreensSide.Right, true);
+
+      } else {
+        this.setArrowState(ScreensSide.Left, false);
+        this.setArrowState(ScreensSide.Right, false);
+      }
+  }
+
+  setArrowState = (side: ScreensSide, disabled: boolean) => {
+    switch (side) {
+      case ScreensSide.Left: this.lockLeftArrow = disabled; break;
+      case ScreensSide.Right: this.lockRightArrow = disabled; break;
+    }
+  }
 
   disableArrow(disabled: boolean, side: ScreensSide) {
     switch(side) {
@@ -62,17 +67,17 @@ export class GenArrowsComponent {
     }
   }
 
-  ngAfterContentChecked() {
+  checkDisabledArrows() {
     if (this.leftArrow && this.rightArrow) {
-      if(lockLeftArrow && lockRightArrow) {
+      if(this.lockLeftArrow && this.lockRightArrow) {
         this.disableArrow(true, ScreensSide.Left);
         this.disableArrow(true, ScreensSide.Right);
 
-      } else if (lockLeftArrow && !lockRightArrow) {
+      } else if (this.lockLeftArrow && !this.lockRightArrow) {
         this.disableArrow(true, ScreensSide.Left);
         this.disableArrow(false, ScreensSide.Right);
 
-      } else if (lockRightArrow && !lockLeftArrow) {
+      } else if (this.lockRightArrow && !this.lockLeftArrow) {
         this.disableArrow(false, ScreensSide.Left);
         this.disableArrow(true, ScreensSide.Right);
 
@@ -88,8 +93,8 @@ export class GenArrowsComponent {
   }
 
   onClickArrow(side: ScreensSide) {
-    const previousScreen = ScreenSupport.getScreen(getCurrComponent, ScreensSide.Left);
-    const nextScreen = ScreenSupport.getScreen(getCurrComponent, ScreensSide.Right);
+    const previousScreen = ScreenSupport.getScreen(this.getCurrComponent, ScreensSide.Left);
+    const nextScreen = ScreenSupport.getScreen(this.getCurrComponent, ScreensSide.Right);
 
     if (side == 0 && previousScreen !== null) {
       this.newRoute(previousScreen);
@@ -97,5 +102,10 @@ export class GenArrowsComponent {
     } else if (side == 1 && nextScreen !== null) {
       this.newRoute(nextScreen);
     }
+  }
+
+  ngAfterViewChecked() {
+    this.initData();
+    this.checkDisabledArrows()
   }
 }

@@ -7,20 +7,24 @@ import { GenArrowsComponent } from '../../general/gen-arrows/gen-arrows.componen
 import { GenInfoComponent } from '../../general/gen-info/gen-info.component';
 
 @Component({
-  selector: 'app-scr-skills',
+  selector: 'app-scr-about',
   standalone: true,
   imports: [
     commonModuleUtils,
     GenArrowsComponent,
     GenInfoComponent
   ],
-  templateUrl: './scr-skills.component.html',
-  styleUrls: ['./scr-skills.component.css']
+  templateUrl: './scr-about.component.html',
+  styleUrls: ['./scr-about.component.css']
 })
-export class ScrSkillsComponent {
-  ngOnInit() {
+
+export class ScrAboutComponent {
+
+  constructor() { }
+
+  ngOnInit(): void {
     if (typeof window !== 'undefined') {
-      ScreenSupport.setCurrentScreen(Screens.Skills);
+      ScreenSupport.setCurrentScreen(Screens.About);
     }
   }
 }

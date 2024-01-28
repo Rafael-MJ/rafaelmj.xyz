@@ -1,19 +1,22 @@
 import { Component } from '@angular/core';
-
-import { ScreenSupport } from 'src/app/utils/ScreenUtils';
-import { Screens } from 'src/app/utils/ScreenUtils';
+import { GenArrowsComponent } from '../../general/gen-arrows/gen-arrows.component';
+import { commonModuleUtils } from 'src/app/utils/RoutingUtils';
+import { ScreenSupport, Screens } from 'src/app/utils/ScreenUtils';
+import { GenDeviconsComponent } from '../../general/gen-devicons/gen-devicons.component';
 
 @Component({
   selector: 'app-scr-main',
+  standalone: true,
+  imports: [
+    commonModuleUtils,
+    GenArrowsComponent,
+    GenDeviconsComponent
+  ],
   templateUrl: './scr-main.component.html',
-  styleUrls: ['./scr-main.component.css']
+  styleUrl: './scr-main.component.css'
 })
-
 export class ScrMainComponent {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
     if (typeof window !== 'undefined') {
       ScreenSupport.setCurrentScreen(Screens.Main);
     }

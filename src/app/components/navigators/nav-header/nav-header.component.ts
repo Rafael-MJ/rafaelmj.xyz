@@ -23,14 +23,17 @@ export class NavHeaderComponent {
       case Screens.Main:
         this.htmlElements[0].nativeElement.classList.add('enabled');
         break;
-      case Screens.Knowledge:
+      case Screens.About:
         this.htmlElements[1].nativeElement.classList.add('enabled');
         break;
-      case Screens.Skills:
+      case Screens.Knowledge:
         this.htmlElements[2].nativeElement.classList.add('enabled');
         break;
-      case Screens.Info:
+      case Screens.Skills:
         this.htmlElements[3].nativeElement.classList.add('enabled');
+        break;
+      case Screens.Info:
+        this.htmlElements[4].nativeElement.classList.add('enabled');
         break;
     }
   }
