@@ -47,11 +47,11 @@
 }
 
 #me-icon {
-  max-height: 8vh;
+  max-height: 3.5em;
 }
 
 #curriculum-icon {
-  width: 6.5vh;
+  max-height: 2.5em;
 }
 
 #curriculum-icon:hover {

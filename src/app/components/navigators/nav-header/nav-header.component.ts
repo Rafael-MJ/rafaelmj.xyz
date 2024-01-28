@@ -20,7 +20,7 @@ export class NavHeaderComponent {
     this.disableEffects();
 
     switch(currentScreen) {
-      case Screens.Main:
+      case Screens.About:
         this.htmlElements[0].nativeElement.classList.add('enabled');
         break;
       case Screens.Knowledge:
