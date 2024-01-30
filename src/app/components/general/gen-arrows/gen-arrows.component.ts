@@ -1,7 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import { commonModuleUtils } from 'src/app/utils/RoutingUtils';
 
+import { commonModuleUtils } from 'src/app/utils/RoutingUtils';
 import { ScreenSupport, ScreensSide } from 'src/app/utils/ScreenUtils';
 import { Screens } from 'src/app/utils/ScreenUtils';
 

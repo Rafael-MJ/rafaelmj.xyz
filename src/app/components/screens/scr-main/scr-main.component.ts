@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { GenArrowsComponent } from '../../general/gen-arrows/gen-arrows.component';
+
 import { commonModuleUtils } from 'src/app/utils/RoutingUtils';
 import { ScreenSupport, Screens } from 'src/app/utils/ScreenUtils';
+
+import { GenArrowsComponent } from '../../general/gen-arrows/gen-arrows.component';
 import { GenDeviconsComponent } from '../../general/gen-devicons/gen-devicons.component';
 
 @Component({
