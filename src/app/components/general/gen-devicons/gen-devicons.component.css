@@ -9,6 +9,8 @@
 
 .animated-icon {
   user-select: none;
+  height: 50px;
+  width: 50px;
 }
 
 .animated-icon:hover {
