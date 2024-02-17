@@ -8,10 +8,9 @@ describe('ScrNotfoundComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ScrNotfoundComponent]
-    })
-    .compileComponents();
-    
+      imports: [ScrNotfoundComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ScrNotfoundComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

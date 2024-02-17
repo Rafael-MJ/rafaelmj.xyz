@@ -9,13 +9,9 @@ import { GenDeviconsComponent } from '../../general/gen-devicons/gen-devicons.co
 @Component({
   selector: 'app-scr-main',
   standalone: true,
-  imports: [
-    commonModuleUtils,
-    GenArrowsComponent,
-    GenDeviconsComponent
-  ],
+  imports: [commonModuleUtils, GenArrowsComponent, GenDeviconsComponent],
   templateUrl: './scr-main.component.html',
-  styleUrl: './scr-main.component.css'
+  styleUrl: './scr-main.component.css',
 })
 export class ScrMainComponent {
   ngOnInit() {

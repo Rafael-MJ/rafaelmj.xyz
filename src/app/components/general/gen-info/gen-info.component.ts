@@ -5,10 +5,8 @@ import { commonModuleUtils } from 'src/app/utils/RoutingUtils';
 @Component({
   selector: 'app-gen-info',
   standalone: true,
-  imports: [
-    commonModuleUtils
-  ],
+  imports: [commonModuleUtils],
   templateUrl: './gen-info.component.html',
-  styleUrl: './gen-info.component.css'
+  styleUrl: './gen-info.component.css',
 })
-export class GenInfoComponent { }
+export class GenInfoComponent {}

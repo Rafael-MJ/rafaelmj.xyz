@@ -1,11 +1,11 @@
 import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 
-import { ScreenSupport, Screens } from '../../../utils/ScreenUtils'
+import { ScreenSupport, Screens } from '../../../utils/ScreenUtils';
 
 @Component({
   selector: 'app-nav-header',
   templateUrl: './nav-header.component.html',
-  styleUrls: ['./nav-header.component.css']
+  styleUrls: ['./nav-header.component.css'],
 })
 export class NavHeaderComponent {
   @ViewChildren('n0, n1, n2, n3') elementos!: QueryList<ElementRef>;
@@ -20,7 +20,7 @@ export class NavHeaderComponent {
 
     this.disableEffects();
 
-    switch(currentScreen) {
+    switch (currentScreen) {
       case Screens.Main:
         this.htmlElements[0].nativeElement.classList.add('enabled');
         break;
@@ -39,10 +39,10 @@ export class NavHeaderComponent {
     }
   }
 
-  disableEffects () {
-      for (let i = 0; i < this.htmlElements.length; i++) {
-        this.htmlElements[i].nativeElement.classList.remove('enabled');
-      }
+  disableEffects() {
+    for (let i = 0; i < this.htmlElements.length; i++) {
+      this.htmlElements[i].nativeElement.classList.remove('enabled');
+    }
   }
 
   enableEffect(index: number) {

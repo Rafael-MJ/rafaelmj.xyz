@@ -6,15 +6,10 @@ import { AppCommonModule } from './app.common.module';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    RouterLink,
-    RouterOutlet,
-    AppCommonModule
-  ],
+  imports: [RouterLink, RouterOutlet, AppCommonModule],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-
 export class AppComponent {
   title = 'rafael-mj';
   footerUrl = 'https://www.rafaelmj.xyz';

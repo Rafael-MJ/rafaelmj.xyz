@@ -7,13 +7,8 @@ const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
+export class RoutingModule {}
 
-export class RoutingModule { }
-
-export const commonModuleUtils = [
-  CommonModule,
-  RoutingModule,
-  NgbModule
-];
+export const commonModuleUtils = [CommonModule, RoutingModule, NgbModule];

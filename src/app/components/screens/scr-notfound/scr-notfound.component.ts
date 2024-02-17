@@ -8,12 +8,9 @@ import { GenArrowsComponent } from '../../general/gen-arrows/gen-arrows.componen
 @Component({
   selector: 'app-scr-notfound',
   standalone: true,
-  imports: [
-    commonModuleUtils,
-    GenArrowsComponent
-  ],
+  imports: [commonModuleUtils, GenArrowsComponent],
   templateUrl: './scr-notfound.component.html',
-  styleUrl: './scr-notfound.component.css'
+  styleUrl: './scr-notfound.component.css',
 })
 export class ScrNotfoundComponent {
   ngOnInit() {

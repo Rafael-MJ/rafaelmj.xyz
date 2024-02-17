@@ -10,13 +10,9 @@ import { GenInfoComponent } from '../../general/gen-info/gen-info.component';
 @Component({
   selector: 'app-scr-skills',
   standalone: true,
-  imports: [
-    commonModuleUtils,
-    GenArrowsComponent,
-    GenInfoComponent
-  ],
+  imports: [commonModuleUtils, GenArrowsComponent, GenInfoComponent],
   templateUrl: './scr-skills.component.html',
-  styleUrls: ['./scr-skills.component.css']
+  styleUrls: ['./scr-skills.component.css'],
 })
 export class ScrSkillsComponent {
   ngOnInit() {

@@ -8,10 +8,9 @@ describe('GenInfoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GenInfoComponent]
-    })
-    .compileComponents();
-    
+      imports: [GenInfoComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(GenInfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

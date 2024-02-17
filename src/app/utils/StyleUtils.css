@@ -1,39 +1,39 @@
 /* Only NOT Mobile */
-@media only screen and (hover:hover) and (pointer:fine) {
-    .card:hover {
-        transform: scale(1.02);
-        transition: transform 0.2s ease;
-        cursor: default;
-    }
+@media only screen and (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+    cursor: default;
+  }
 }
 
 .navigator {
-    min-height: 7.5vh;
+  min-height: 7.5vh;
 }
 
 .navbar a {
-    user-select: none;
+  user-select: none;
 }
 
 .card {
-    min-width: 380px;
-    box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.55);
-    text-align: justify !important;
-    border-radius: 2px;
+  min-width: 380px;
+  box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.55);
+  text-align: justify !important;
+  border-radius: 2px;
 }
 
 .main-color {
-color: #9900bb !important;
+  color: #9900bb !important;
 }
 
 .border-main-color {
-    border-color: #9900bb !important;
+  border-color: #9900bb !important;
 }
 
 .purple-background {
-    background-color: #9900bb !important;
+  background-color: #9900bb !important;
 }
 
 .main-bg-color {
-background-color: #171717;
+  background-color: #171717;
 }

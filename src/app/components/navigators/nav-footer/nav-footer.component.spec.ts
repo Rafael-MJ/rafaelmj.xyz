@@ -8,7 +8,7 @@ describe('NavFooterComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [NavFooterComponent]
+      declarations: [NavFooterComponent],
     });
     fixture = TestBed.createComponent(NavFooterComponent);
     component = fixture.componentInstance;

@@ -8,7 +8,7 @@ describe('GenDeviconsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [GenDeviconsComponent]
+      declarations: [GenDeviconsComponent],
     });
     fixture = TestBed.createComponent(GenDeviconsComponent);
     component = fixture.componentInstance;

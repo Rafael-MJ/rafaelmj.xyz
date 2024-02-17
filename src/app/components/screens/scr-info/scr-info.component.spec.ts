@@ -8,7 +8,7 @@ describe('ScrInfoComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ScrInfoComponent]
+      declarations: [ScrInfoComponent],
     });
     fixture = TestBed.createComponent(ScrInfoComponent);
     component = fixture.componentInstance;

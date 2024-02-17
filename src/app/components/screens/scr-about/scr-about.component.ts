@@ -10,18 +10,12 @@ import { GenInfoComponent } from '../../general/gen-info/gen-info.component';
 @Component({
   selector: 'app-scr-about',
   standalone: true,
-  imports: [
-    commonModuleUtils,
-    GenArrowsComponent,
-    GenInfoComponent
-  ],
+  imports: [commonModuleUtils, GenArrowsComponent, GenInfoComponent],
   templateUrl: './scr-about.component.html',
-  styleUrls: ['./scr-about.component.css']
+  styleUrls: ['./scr-about.component.css'],
 })
-
 export class ScrAboutComponent {
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     if (typeof window !== 'undefined') {

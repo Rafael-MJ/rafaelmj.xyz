@@ -8,7 +8,7 @@ describe('ScrKnowledgeComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ScrKnowledgeComponent]
+      declarations: [ScrKnowledgeComponent],
     });
     fixture = TestBed.createComponent(ScrKnowledgeComponent);
     component = fixture.componentInstance;

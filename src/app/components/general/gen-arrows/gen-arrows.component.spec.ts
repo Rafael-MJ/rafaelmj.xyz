@@ -8,9 +8,8 @@ describe('GenArrowsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GenArrowsComponent]
-    })
-    .compileComponents();
+      imports: [GenArrowsComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(GenArrowsComponent);
     component = fixture.componentInstance;
