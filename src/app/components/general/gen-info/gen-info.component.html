@@ -1,13 +1,8 @@
-<div class="col-11 mx-auto nav justify-content-center my-5">
-  <nav
-    class="navbar main-bg-color w-auto"
-    id="project-info"
-    data-bs-theme="dark"
-    style="padding: 5px 8px"
+<div *ngIf="showedInfo" (click)="updateInfo()" class="navbar project-info p-1">
+  <span class="text-white text-center"
+    >Na aplicação foram utilizadas as ferramentas 'Angular' e 'Bootstrap'. O código fonte está
+    disponível em meu GitHub.</span
   >
-    <span class="text-secondary text-center"
-      >* Nesta aplicação, foram utilizadas as ferramentas 'Angular' e 'Bootstrap'. O código fonte
-      está disponível em meu GitHub.</span
-    >
-  </nav>
 </div>
+
+<div class="info-icon" (click)="updateInfo()">i</div>

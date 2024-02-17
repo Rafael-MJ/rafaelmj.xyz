@@ -1,5 +1,36 @@
-#project-info {
+.project-info {
+  max-width: 30vh;
+  height: auto;
+  position: fixed;
+  right: 60px;
+  bottom: 19vh;
   font-size: smaller;
   font-weight: 500;
   border-radius: 4px;
+  background: linear-gradient(to right, #8400ff, #800080);
+}
+
+.info-icon {
+  display: flex;
+  position: fixed;
+  width: 9vh;
+  height: 9vh;
+  right: 15px;
+  bottom: 12vh;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 6vh;
+  user-select: none;
+  background: radial-gradient(circle, #d100ff 0%, #2f0055 65%);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.info-icon:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
 }

@@ -9,4 +9,11 @@ import { commonModuleUtils } from 'src/app/utils/RoutingUtils';
   templateUrl: './gen-info.component.html',
   styleUrl: './gen-info.component.css',
 })
-export class GenInfoComponent {}
+export class GenInfoComponent {
+  showedInfo: boolean = false;
+
+  updateInfo() {
+    if (this.showedInfo) this.showedInfo = false;
+    else this.showedInfo = true;
+  }
+}
