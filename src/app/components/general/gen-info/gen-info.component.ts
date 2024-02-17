@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 import { commonModuleUtils } from 'src/app/utils/RoutingUtils';
 
@@ -10,10 +10,16 @@ import { commonModuleUtils } from 'src/app/utils/RoutingUtils';
   styleUrl: './gen-info.component.css',
 })
 export class GenInfoComponent {
+  @ViewChild('InfoIcon') infoIcon!: ElementRef;
   showedInfo: boolean = false;
 
   updateInfo() {
-    if (this.showedInfo) this.showedInfo = false;
-    else this.showedInfo = true;
+    if (this.showedInfo) {
+      this.showedInfo = false;
+      this.infoIcon.nativeElement.setAttribute('src', 'assets/icons/info.png');
+    } else {
+      this.showedInfo = true;
+      this.infoIcon.nativeElement.setAttribute('src', 'assets/icons/info-close.png');
+    }
   }
 }
