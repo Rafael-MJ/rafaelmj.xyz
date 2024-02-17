@@ -1,24 +1,36 @@
 /* Only NOT Mobile */
 @media only screen and (hover: hover) and (pointer: fine) {
-  .arrow:hover {
-    background-color: #660055 !important;
+  .arrow-left:hover,
+  .arrow-right:hover {
+    background: #4d0440 !important;
+    transform: scale(1.1);
+    border: none;
+    transition: all 0.5s ease;
   }
-}
-
-.arrow {
-  border-radius: 2px;
-}
-
-.arrow {
-  border: none;
-  font-weight: bold;
-}
-
-.arrow:disabled {
-  background-color: #555 !important;
 }
 
 .arrow-column {
   min-width: 150px;
   max-width: 10vw;
+}
+
+.arrow-left,
+.arrow-right {
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+.arrow-left {
+  background: linear-gradient(90deg, #d100ff 0%, #390030 100%);
+}
+
+.arrow-right {
+  background: linear-gradient(90deg, #390030 0%, #d100ff 100%);
+}
+
+.arrow-left:disabled,
+.arrow-right:disabled {
+  background: #535353 !important;
 }
