@@ -1,8 +1,10 @@
-<div *ngIf="showedInfo" (click)="updateInfo()" class="navbar project-info p-1">
-  <span class="text-white text-center"
-    >Na aplicação foram utilizadas as ferramentas 'Angular' e 'Bootstrap'. O código fonte está
-    disponível em meu GitHub.</span
-  >
-</div>
+<div class="info-back">
+  <div *ngIf="showedInfo" (click)="updateInfo()" class="navbar project-info p-1">
+    <span class="text-white text-center"
+      >Na aplicação foram utilizadas as ferramentas 'Angular' e 'Bootstrap'. O código fonte está
+      disponível em meu GitHub.</span
+    >
+  </div>
 
-<img #InfoIcon src="../../../../assets/icons/info.png" class="info-icon" (click)="updateInfo()" />
+  <img #InfoIcon src="../../../../assets/icons/info.png" class="info-icon" (click)="updateInfo()" />
+</div>

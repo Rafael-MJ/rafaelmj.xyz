@@ -1,27 +1,40 @@
-.project-info {
-  max-width: 30vh;
-  height: auto;
+.info-back {
   position: fixed;
-  right: 65px;
-  bottom: 22vh;
+  width: 60vh;
+  height: 40vh;
+  right: 20px;
+  bottom: 15vh;
+}
+
+.info-back > * {
+  position: absolute;
+}
+
+.project-info {
+  width: 50%;
+  min-height: 35%;
   font-size: smaller;
   font-weight: 500;
   border-radius: 20px 20px 0 20px;
   background: linear-gradient(to right, #8400ff, #800080);
+  bottom: 9vh;
+  right: 9vh;
 }
 
 .info-icon {
   position: fixed;
   width: 9vh;
   height: 9vh;
-  right: 15px;
-  bottom: 12vh;
   user-select: none;
   cursor: pointer;
   transition: all 0.5s;
+  bottom: 0;
+  right: 0;
 }
 
-.info-icon:hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
+@media only screen and (hover: hover) and (pointer: fine) {
+  .info-icon:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
 }
