@@ -12,7 +12,7 @@ import { GenInfoComponent } from '../../general/gen-info/gen-info.component';
   standalone: true,
   imports: [commonModuleUtils, GenArrowsComponent, GenInfoComponent],
   templateUrl: './scr-about.component.html',
-  styleUrls: ['./scr-about.component.css'],
+  styleUrls: ['./scr-about.component.scss'],
 })
 export class ScrAboutComponent {
   constructor() {}

@@ -7,7 +7,7 @@ import { commonModuleUtils } from 'src/app/utils/RoutingUtils';
   standalone: true,
   imports: [commonModuleUtils],
   templateUrl: './gen-info.component.html',
-  styleUrl: './gen-info.component.css',
+  styleUrl: './gen-info.component.scss',
 })
 export class GenInfoComponent {
   @ViewChild('InfoIcon') infoIcon!: ElementRef;

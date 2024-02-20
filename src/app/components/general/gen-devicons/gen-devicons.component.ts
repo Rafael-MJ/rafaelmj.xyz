@@ -7,6 +7,6 @@ import { commonModuleUtils } from 'src/app/utils/RoutingUtils';
   standalone: true,
   imports: [commonModuleUtils],
   templateUrl: './gen-devicons.component.html',
-  styleUrls: ['./gen-devicons.component.css'],
+  styleUrls: ['./gen-devicons.component.scss'],
 })
 export class GenDeviconsComponent {}

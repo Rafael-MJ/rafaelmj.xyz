@@ -12,7 +12,7 @@ import { GenInfoComponent } from '../../general/gen-info/gen-info.component';
   standalone: true,
   imports: [commonModuleUtils, GenArrowsComponent, GenInfoComponent],
   templateUrl: './scr-skills.component.html',
-  styleUrls: ['./scr-skills.component.css'],
+  styleUrls: ['./scr-skills.component.scss'],
 })
 export class ScrSkillsComponent {
   ngOnInit() {

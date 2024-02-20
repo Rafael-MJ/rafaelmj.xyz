@@ -8,7 +8,7 @@ import { AppCommonModule } from './app.common.module';
   standalone: true,
   imports: [RouterLink, RouterOutlet, AppCommonModule],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'rafael-mj';

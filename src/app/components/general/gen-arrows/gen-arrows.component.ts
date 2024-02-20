@@ -10,7 +10,7 @@ import { Screens } from 'src/app/utils/ScreenUtils';
   standalone: true,
   imports: [commonModuleUtils],
   templateUrl: './gen-arrows.component.html',
-  styleUrl: './gen-arrows.component.css',
+  styleUrl: './gen-arrows.component.scss',
 })
 export class GenArrowsComponent {
   @ViewChild('LeftArrow') leftArrow!: ElementRef;

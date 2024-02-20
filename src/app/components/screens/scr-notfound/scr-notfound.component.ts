@@ -10,7 +10,7 @@ import { GenArrowsComponent } from '../../general/gen-arrows/gen-arrows.componen
   standalone: true,
   imports: [commonModuleUtils, GenArrowsComponent],
   templateUrl: './scr-notfound.component.html',
-  styleUrl: './scr-notfound.component.css',
+  styleUrl: './scr-notfound.component.scss',
 })
 export class ScrNotfoundComponent {
   ngOnInit() {
