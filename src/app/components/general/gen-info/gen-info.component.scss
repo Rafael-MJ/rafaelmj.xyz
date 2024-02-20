@@ -1,3 +1,5 @@
+@import '../../../utils/StyleUtils.scss';
+
 .info-back {
   position: fixed;
   width: 60vh;
@@ -16,7 +18,7 @@
   font-size: smaller;
   font-weight: 500;
   border-radius: 20px 20px 0 20px;
-  background: linear-gradient(to right, #8400ff, #800080);
+  background: linear-gradient(to right, $color-light-purple, $color-purple);
   bottom: 9vh;
   right: 9vh;
 }

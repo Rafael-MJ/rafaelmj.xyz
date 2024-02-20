@@ -1,8 +1,10 @@
+@import '../../../utils/StyleUtils.scss';
+
 /* Only NOT Mobile */
 @media only screen and (hover: hover) and (pointer: fine) {
   .arrow-left:hover,
   .arrow-right:hover {
-    background: #4d0440 !important;
+    background: $color-dark-purple !important;
     transform: scale(1.1);
     border: none;
     transition: all 0.5s ease;
@@ -23,14 +25,14 @@
 }
 
 .arrow-left {
-  background: linear-gradient(90deg, #d100ff 0%, #390030 100%);
+  background: linear-gradient(90deg, $color-light-purple 0%, $color-dark-purple 100%);
 }
 
 .arrow-right {
-  background: linear-gradient(90deg, #390030 0%, #d100ff 100%);
+  background: linear-gradient(90deg, $color-dark-purple 0%, $color-light-purple 100%);
 }
 
 .arrow-left:disabled,
 .arrow-right:disabled {
-  background: #535353 !important;
+  background: $color-gray !important;
 }

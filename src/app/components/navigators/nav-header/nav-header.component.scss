@@ -1,3 +1,5 @@
+@import '../../../utils/StyleUtils.scss';
+
 .navbar {
   padding: 0px;
 }
@@ -15,7 +17,7 @@
 }
 
 .nav-item a:hover {
-  color: #9900bb !important;
+  color: $color-dark-purple !important;
 }
 
 .nav-item span {
