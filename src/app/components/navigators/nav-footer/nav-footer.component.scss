@@ -1,9 +1,15 @@
 @import '../../../utils/StyleUtils.scss';
 
-.navigator {
+.footer {
   border-color: $color-purple !important;
+  max-width: $screen-max-width;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 #logo {
-  max-height: 5vh;
+  max-height: 2.5em;
 }

@@ -8,19 +8,22 @@
 
 html {
   overflow-y: auto;
-  height: 100%;
 }
 
 body {
-  min-height: 100%;
-  background-color: rgb(15, 15, 15);
-  padding-bottom: 5vh;
+  position: relative;
+  min-height: 100vh;
+  max-width: $screen-max-width;
+  margin: 0 auto;
+  background-color: #000;
+  padding-bottom: 80px; // Footer Size
 }
 
 // Custom Elements
 
 .navigator {
-  min-height: 7.5vh;
+  height: 7.5vh;
+  max-height: 70px !important;
 }
 
 .card {
