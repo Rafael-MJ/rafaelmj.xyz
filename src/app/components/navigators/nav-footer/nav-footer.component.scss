@@ -1,3 +1,9 @@
+@import '../../../utils/StyleUtils.scss';
+
+.navigator {
+  border-color: $color-purple;
+}
+
 #logo {
   max-height: 5vh;
 }

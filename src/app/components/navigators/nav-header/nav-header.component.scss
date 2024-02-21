@@ -2,6 +2,7 @@
 
 .navbar {
   padding: 0px;
+  border-color: $color-purple;
 }
 
 .nav-item {
@@ -17,7 +18,7 @@
 }
 
 .nav-item a:hover {
-  color: $color-dark-purple !important;
+  color: $color-purple !important;
 }
 
 .nav-item span {
@@ -28,7 +29,7 @@
   right: -4%;
   height: 100%;
   z-index: -1;
-  border-bottom: 2px solid #9900bb;
+  border-bottom: 2px solid $color-purple;
   border-radius: 5px;
   transform: scale(0) translateY(50px);
   transition: transform 0.25s ease;
