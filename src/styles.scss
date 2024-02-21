@@ -2,6 +2,10 @@
 
 // Default Elements
 
+* {
+  user-select: none;
+}
+
 html {
   overflow-y: auto;
   height: 100%;
@@ -17,10 +21,6 @@ body {
 
 .navigator {
   min-height: 7.5vh;
-}
-
-.navbar a {
-  user-select: none;
 }
 
 .card {
