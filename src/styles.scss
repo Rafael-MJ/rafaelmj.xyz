@@ -20,13 +20,13 @@ body {
   max-width: $screen-max-width;
   margin: 0 auto;
   background-color: #000;
-  padding-bottom: 80px; // Footer Size
+  padding-bottom: $screen-nav-size;
 }
 
 // Custom Elements
 
 .navigator {
-  height: 80px !important;
+  height: $screen-nav-size;
 }
 
 .card {
