@@ -10,6 +10,7 @@ import { ScrSkillsComponent } from '../scr-skills/scr-skills.component';
 import { GenInfoComponent } from '../../general/gen-info/gen-info.component';
 import { ScrAboutComponent } from '../scr-about/scr-about.component';
 import { ScrInfoComponent } from '../scr-info/scr-info.component';
+import { ScrFluencyComponent } from '../scr-fluency/scr-fluency.component';
 
 @Component({
   selector: 'app-scr-main',
@@ -17,6 +18,7 @@ import { ScrInfoComponent } from '../scr-info/scr-info.component';
   imports: [
     commonModuleUtils,
     ScrAboutComponent,
+    ScrFluencyComponent,
     ScrInfoComponent,
     ScrKnowledgeComponent,
     ScrSkillsComponent,
