@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { commonModuleUtils } from 'src/app/utils/RoutingUtils';
+import { commonModuleUtils } from 'src/app/utils/routing.utils';
 
 @Component({
   selector: 'app-gen-devicons',

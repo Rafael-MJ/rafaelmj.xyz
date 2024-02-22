@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import { commonModuleUtils } from 'src/app/utils/RoutingUtils';
-import { ScreenSupport } from 'src/app/utils/ScreenUtils';
+import { commonModuleUtils } from 'src/app/utils/routing.utils';
+import { ScreenSupport } from 'src/app/utils/screen.utils';
 
 import { GenArrowsComponent } from '../../general/gen-arrows/gen-arrows.component';
 

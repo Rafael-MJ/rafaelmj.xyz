@@ -1,6 +1,6 @@
 import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 
-import { ScreenSupport, Screens } from '../../../utils/ScreenUtils';
+import { ScreenSupport, Screens } from '../../../utils/screen.utils';
 
 @Component({
   selector: 'app-nav-header',

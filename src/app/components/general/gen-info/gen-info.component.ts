@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 
-import { commonModuleUtils } from 'src/app/utils/RoutingUtils';
+import { commonModuleUtils } from 'src/app/utils/routing.utils';
 
 @Component({
   selector: 'app-gen-info',

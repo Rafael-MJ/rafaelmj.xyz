@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { commonModuleUtils } from './utils/RoutingUtils';
+import { commonModuleUtils } from './utils/routing.utils';
 
 import { NavFooterComponent } from './components/navigators/nav-footer/nav-footer.component';
 import { NavHeaderComponent } from './components/navigators/nav-header/nav-header.component';

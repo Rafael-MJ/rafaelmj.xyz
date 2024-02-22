@@ -1,9 +1,9 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { commonModuleUtils } from 'src/app/utils/RoutingUtils';
-import { ScreenSupport, ScreensSide } from 'src/app/utils/ScreenUtils';
-import { Screens } from 'src/app/utils/ScreenUtils';
+import { commonModuleUtils } from 'src/app/utils/routing.utils';
+import { ScreenSupport, ScreensSide } from 'src/app/utils/screen.utils';
+import { Screens } from 'src/app/utils/screen.utils';
 
 @Component({
   selector: 'app-gen-arrows',
