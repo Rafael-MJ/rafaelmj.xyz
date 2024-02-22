@@ -14,10 +14,4 @@ import { GenInfoComponent } from '../../general/gen-info/gen-info.component';
   templateUrl: './scr-knowledge.component.html',
   styleUrls: ['./scr-knowledge.component.scss'],
 })
-export class ScrKnowledgeComponent {
-  ngOnInit() {
-    if (typeof window !== 'undefined') {
-      ScreenSupport.setCurrentScreen(Screens.Knowledge);
-    }
-  }
-}
+export class ScrKnowledgeComponent {}
