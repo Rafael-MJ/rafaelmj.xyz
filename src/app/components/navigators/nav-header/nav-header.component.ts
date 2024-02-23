@@ -1,15 +1,25 @@
-import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
+import { Component, ElementRef, Inject, QueryList, ViewChildren } from '@angular/core';
 
 import { ScreenSupport, Screens } from '../../../utils/screen.utils';
+import { commonModuleUtils } from 'src/app/utils/routing.utils';
+import { ScrMainComponent } from '../../screens/scr-main/scr-main.component';
 
 @Component({
+  standalone: true,
+  imports: [commonModuleUtils, ScrMainComponent],
   selector: 'app-nav-header',
   templateUrl: './nav-header.component.html',
   styleUrls: ['./nav-header.component.scss'],
 })
 export class NavHeaderComponent {
   @ViewChildren('n0, n1, n2, n3') elementos!: QueryList<ElementRef>;
+
+  private scrMain: ScrMainComponent;
   htmlElements: ElementRef[] = [];
+
+  constructor(@Inject(ScrMainComponent) screenMain: ScrMainComponent) {
+    this.scrMain = screenMain;
+  }
 
   ngAfterViewInit() {
     this.htmlElements = this.elementos.toArray();
@@ -24,17 +34,33 @@ export class NavHeaderComponent {
       case Screens.Main:
         this.htmlElements[0].nativeElement.classList.add('enabled');
         break;
-      case Screens.About:
+      case Screens.Curriculum:
         this.htmlElements[1].nativeElement.classList.add('enabled');
         break;
-      case Screens.Knowledge:
-        this.htmlElements[2].nativeElement.classList.add('enabled');
+    }
+  }
+
+  switchMainElement(mainElement: string) {
+    const element = this.scrMain;
+
+    switch (mainElement) {
+      case 'main':
+        element.main.nativeElement.scrollIntoView({ behavior: 'smooth' });
         break;
-      case Screens.Skills:
-        this.htmlElements[3].nativeElement.classList.add('enabled');
+      case 'about':
+        element.about.nativeElement.scrollIntoView({ behavior: 'smooth' });
         break;
-      case Screens.Info:
-        this.htmlElements[4].nativeElement.classList.add('enabled');
+      case 'knowledge':
+        element.knowledge.nativeElement.scrollIntoView({ behavior: 'smooth' });
+        break;
+      case 'skills':
+        element.skills.nativeElement.scrollIntoView({ behavior: 'smooth' });
+        break;
+      case 'fluency':
+        element.fluency.nativeElement.scrollIntoView({ behavior: 'smooth' });
+        break;
+      case 'info':
+        element.info.nativeElement.scrollIntoView({ behavior: 'smooth' });
         break;
     }
   }

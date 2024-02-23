@@ -5,10 +5,6 @@ export enum ScreensSide {
 
 export enum Screens {
   Main = 'main',
-  About = 'about',
-  Knowledge = 'knowledge',
-  Skills = 'skills',
-  Info = 'infos',
   Curriculum = 'curriculum',
 }
 

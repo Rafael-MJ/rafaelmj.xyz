@@ -1,4 +1,6 @@
-<div class="bg w-100">
+<app-nav-header></app-nav-header>
+
+<div #main class="bg w-100">
   <div class="col-12">
     <img src="../../../../assets/bg.png" alt="" />
     <div class="centered">
@@ -20,10 +22,11 @@
   </div>
 </div>
 
-<app-scr-about></app-scr-about>
-<app-scr-knowledge></app-scr-knowledge>
-<app-scr-skills></app-scr-skills>
-<app-scr-fluency></app-scr-fluency>
-<app-scr-info></app-scr-info>
+<div #about><app-scr-about></app-scr-about></div>
+<div #knowledge><app-scr-knowledge></app-scr-knowledge></div>
+<div #skills><app-scr-skills></app-scr-skills></div>
+<div #fluency><app-scr-fluency></app-scr-fluency></div>
+<div #info><app-scr-info></app-scr-info></div>
+
 <app-gen-arrows></app-gen-arrows>
 <app-gen-info></app-gen-info>
