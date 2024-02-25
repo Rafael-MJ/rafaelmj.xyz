@@ -1,3 +1,5 @@
+@import 'src/app/utils/style.utils.scss';
+
 nav {
   min-height: 450px;
 }
@@ -5,4 +7,13 @@ nav {
 #curriculum {
   max-width: 95vw;
   max-height: 95vh;
+}
+
+#btn-download {
+  background-color: $color-purple;
+  border-width: 0;
+}
+
+#btn-download:hover {
+  background-color: $color-dark-purple;
 }
