@@ -15,11 +15,31 @@
       </button>
       <ul class="dropdown-menu-end" ngbDropdownMenu>
         <li><a ngbDropdownItem routerLink="/main">INÍCIO</a></li>
-        <li><a ngbDropdownItem (click)="switchMainElement('about')">SOBRE</a></li>
-        <li><a ngbDropdownItem (click)="switchMainElement('knowledge')">COMPETÊNCIAS</a></li>
-        <li><a ngbDropdownItem (click)="switchMainElement('skills')">HABILIDADES</a></li>
-        <li><a ngbDropdownItem (click)="switchMainElement('fluency')">FLUÊNCIA</a></li>
-        <li><a ngbDropdownItem (click)="switchMainElement('info')">INFOS</a></li>
+        <li>
+          <a *ngIf="showMainElements" ngbDropdownItem (click)="switchMainElement('about')"
+            >* SOBRE</a
+          >
+        </li>
+        <li>
+          <a *ngIf="showMainElements" ngbDropdownItem (click)="switchMainElement('knowledge')"
+            >* COMPETÊNCIAS</a
+          >
+        </li>
+        <li>
+          <a *ngIf="showMainElements" ngbDropdownItem (click)="switchMainElement('skills')"
+            >* HABILIDADES</a
+          >
+        </li>
+        <li>
+          <a *ngIf="showMainElements" ngbDropdownItem (click)="switchMainElement('fluency')"
+            >* FLUÊNCIA</a
+          >
+        </li>
+        <li>
+          <a *ngIf="showMainElements" ngbDropdownItem (click)="switchMainElement('info')"
+            >* INFOS</a
+          >
+        </li>
         <li><a ngbDropdownItem routerLink="/curriculum">CURRÍCULO</a></li>
       </ul>
     </div>
