@@ -32,7 +32,11 @@
               <span></span>
             </li>
             <li class="nav-item">
-              <a #hAbout (click)="enableEffect(1); switchMainElement('about')" class="nav-link"
+              <a
+                #hAbout
+                *ngIf="showMainElements"
+                (click)="enableEffect(1); switchMainElement('about')"
+                class="nav-link"
                 >SOBRE</a
               >
               <span></span>
@@ -40,6 +44,7 @@
             <li class="nav-item">
               <a
                 #hKnowledge
+                *ngIf="showMainElements"
                 (click)="enableEffect(2); switchMainElement('knowledge')"
                 class="nav-link"
                 >COMPETÊNCIAS</a
@@ -47,19 +52,31 @@
               <span></span>
             </li>
             <li class="nav-item">
-              <a #hSkills (click)="enableEffect(3); switchMainElement('skills')" class="nav-link"
+              <a
+                #hSkills
+                *ngIf="showMainElements"
+                (click)="enableEffect(3); switchMainElement('skills')"
+                class="nav-link"
                 >HABILIDADES</a
               >
               <span></span>
             </li>
             <li class="nav-item">
-              <a #hFluency (click)="enableEffect(4); switchMainElement('fluency')" class="nav-link"
+              <a
+                #hFluency
+                *ngIf="showMainElements"
+                (click)="enableEffect(4); switchMainElement('fluency')"
+                class="nav-link"
                 >FLUÊNCIA</a
               >
               <span></span>
             </li>
             <li class="nav-item">
-              <a #hInfo (click)="enableEffect(4); switchMainElement('info')" class="nav-link"
+              <a
+                #hInfo
+                *ngIf="showMainElements"
+                (click)="enableEffect(4); switchMainElement('info')"
+                class="nav-link"
                 >INFOS</a
               >
               <span></span>

@@ -1,9 +1,8 @@
-import { Component, ElementRef, Inject, Optional, QueryList, ViewChildren } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 
 import { ScreenSupport, Screens } from '../../../utils/screen.utils';
 import { commonModuleUtils } from 'src/app/utils/routing.utils';
 import { ScrMainComponent } from '../../screens/scr-main/scr-main.component';
-import { ScrCurriculumComponent } from '../../screens/scr-curriculum/scr-curriculum.component';
 
 @Component({
   standalone: true,
@@ -16,6 +15,8 @@ export class NavHeaderComponent {
   @ViewChildren('hMain, hAbout, hKnowledge, hSkills, hFluency, hInfo, hCV')
   elementos!: QueryList<ElementRef>;
 
+  currentScreen: Screens | null = null;
+  showMainElements = true;
   htmlElements: ElementRef[] = [];
 
   ngAfterViewInit() {
@@ -23,16 +24,29 @@ export class NavHeaderComponent {
   }
 
   ngAfterViewChecked() {
-    let currentScreen = ScreenSupport.getCurrentScreen();
+    this.currentScreen = ScreenSupport.getCurrentScreen();
 
     this.disableEffects();
 
-    switch (currentScreen) {
+    switch (this.currentScreen) {
       case Screens.Main:
         this.htmlElements[0].nativeElement.classList.add('enabled');
         break;
       case Screens.Curriculum:
         this.htmlElements[this.htmlElements.length - 1].nativeElement.classList.add('enabled');
+        break;
+    }
+  }
+
+  ngAfterContentChecked() {
+    this.currentScreen = ScreenSupport.getCurrentScreen();
+
+    switch (this.currentScreen) {
+      case Screens.Main:
+        this.showMainElements = true;
+        break;
+      case Screens.Curriculum:
+        this.showMainElements = false;
         break;
     }
   }
@@ -61,7 +75,6 @@ export class NavHeaderComponent {
           element.info.nativeElement.scrollIntoView({ behavior: 'smooth' });
           break;
       }
-    } else if (element instanceof ScrCurriculumComponent) {
     }
   }
 
