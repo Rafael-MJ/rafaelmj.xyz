@@ -10,11 +10,11 @@
   position: relative;
 }
 
-.nav-item a {
+.nav-link {
   transition: 0.5s;
 }
 
-.nav-item a:focus {
+.nav-link:focus {
   color: none !important;
 }
 
