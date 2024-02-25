@@ -54,25 +54,31 @@ export class NavHeaderComponent {
   switchMainElement(mainElement: string) {
     const element = ScreenSupport.getCurrentComponent();
 
+    const elementTransition = {
+      behavior: 'auto',
+      block: 'center',
+      inline: 'center',
+    };
+
     if (element instanceof ScrMainComponent) {
       switch (mainElement) {
         case 'main':
-          element.main.nativeElement.scrollIntoView({ behavior: 'smooth' });
+          element.main.nativeElement.scrollIntoView(elementTransition);
           break;
         case 'about':
-          element.about.nativeElement.scrollIntoView({ behavior: 'smooth' });
+          element.about.nativeElement.scrollIntoView(elementTransition);
           break;
         case 'knowledge':
-          element.knowledge.nativeElement.scrollIntoView({ behavior: 'smooth' });
+          element.knowledge.nativeElement.scrollIntoView(elementTransition);
           break;
         case 'skills':
-          element.skills.nativeElement.scrollIntoView({ behavior: 'smooth' });
+          element.skills.nativeElement.scrollIntoView(elementTransition);
           break;
         case 'fluency':
-          element.fluency.nativeElement.scrollIntoView({ behavior: 'smooth' });
+          element.fluency.nativeElement.scrollIntoView(elementTransition);
           break;
         case 'info':
-          element.info.nativeElement.scrollIntoView({ behavior: 'smooth' });
+          element.info.nativeElement.scrollIntoView(elementTransition);
           break;
       }
     }
