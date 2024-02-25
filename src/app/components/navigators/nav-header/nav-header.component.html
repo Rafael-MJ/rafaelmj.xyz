@@ -14,7 +14,7 @@
         ⛬
       </button>
       <ul class="dropdown-menu-end" ngbDropdownMenu>
-        <li><a ngbDropdownItem (click)="switchMainElement('main')">INÍCIO</a></li>
+        <li><a ngbDropdownItem routerLink="/main">INÍCIO</a></li>
         <li><a ngbDropdownItem (click)="switchMainElement('about')">SOBRE</a></li>
         <li><a ngbDropdownItem (click)="switchMainElement('knowledge')">COMPETÊNCIAS</a></li>
         <li><a ngbDropdownItem (click)="switchMainElement('skills')">HABILIDADES</a></li>
@@ -28,9 +28,7 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a #n0 (click)="enableEffect(0); switchMainElement('main')" class="nav-link"
-                >INÍCIO</a
-              >
+              <a #n0 routerLink="/main" (click)="enableEffect(0)" class="nav-link">INÍCIO</a>
               <span></span>
             </li>
             <li class="nav-item">

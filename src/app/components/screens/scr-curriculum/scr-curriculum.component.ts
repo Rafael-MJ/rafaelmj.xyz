@@ -19,4 +19,8 @@ export class ScrCurriculumComponent {
       ScreenSupport.setCurrentScreen(Screens.Curriculum);
     }
   }
+
+  ngAfterViewChecked() {
+    ScreenSupport.setCurrentComponent(this);
+  }
 }

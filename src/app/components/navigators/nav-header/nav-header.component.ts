@@ -1,8 +1,9 @@
-import { Component, ElementRef, Inject, QueryList, ViewChildren } from '@angular/core';
+import { Component, ElementRef, Inject, Optional, QueryList, ViewChildren } from '@angular/core';
 
 import { ScreenSupport, Screens } from '../../../utils/screen.utils';
 import { commonModuleUtils } from 'src/app/utils/routing.utils';
 import { ScrMainComponent } from '../../screens/scr-main/scr-main.component';
+import { ScrCurriculumComponent } from '../../screens/scr-curriculum/scr-curriculum.component';
 
 @Component({
   standalone: true,
@@ -14,12 +15,8 @@ import { ScrMainComponent } from '../../screens/scr-main/scr-main.component';
 export class NavHeaderComponent {
   @ViewChildren('n0, n1, n2, n3') elementos!: QueryList<ElementRef>;
 
-  private scrMain: ScrMainComponent;
+  private currentScreenComponent?: ScrMainComponent | ScrCurriculumComponent;
   htmlElements: ElementRef[] = [];
-
-  constructor(@Inject(ScrMainComponent) screenMain: ScrMainComponent) {
-    this.scrMain = screenMain;
-  }
 
   ngAfterViewInit() {
     this.htmlElements = this.elementos.toArray();
@@ -41,27 +38,30 @@ export class NavHeaderComponent {
   }
 
   switchMainElement(mainElement: string) {
-    const element = this.scrMain;
+    const element = ScreenSupport.getCurrentComponent();
 
-    switch (mainElement) {
-      case 'main':
-        element.main.nativeElement.scrollIntoView({ behavior: 'smooth' });
-        break;
-      case 'about':
-        element.about.nativeElement.scrollIntoView({ behavior: 'smooth' });
-        break;
-      case 'knowledge':
-        element.knowledge.nativeElement.scrollIntoView({ behavior: 'smooth' });
-        break;
-      case 'skills':
-        element.skills.nativeElement.scrollIntoView({ behavior: 'smooth' });
-        break;
-      case 'fluency':
-        element.fluency.nativeElement.scrollIntoView({ behavior: 'smooth' });
-        break;
-      case 'info':
-        element.info.nativeElement.scrollIntoView({ behavior: 'smooth' });
-        break;
+    if (element instanceof ScrMainComponent) {
+      switch (mainElement) {
+        case 'main':
+          element.main.nativeElement.scrollIntoView({ behavior: 'smooth' });
+          break;
+        case 'about':
+          element.about.nativeElement.scrollIntoView({ behavior: 'smooth' });
+          break;
+        case 'knowledge':
+          element.knowledge.nativeElement.scrollIntoView({ behavior: 'smooth' });
+          break;
+        case 'skills':
+          element.skills.nativeElement.scrollIntoView({ behavior: 'smooth' });
+          break;
+        case 'fluency':
+          element.fluency.nativeElement.scrollIntoView({ behavior: 'smooth' });
+          break;
+        case 'info':
+          element.info.nativeElement.scrollIntoView({ behavior: 'smooth' });
+          break;
+      }
+    } else if (element instanceof ScrCurriculumComponent) {
     }
   }
 

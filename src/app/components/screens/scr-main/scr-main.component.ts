@@ -18,7 +18,6 @@ import { NavHeaderComponent } from '../../navigators/nav-header/nav-header.compo
   standalone: true,
   imports: [
     commonModuleUtils,
-    NavHeaderComponent,
     ScrAboutComponent,
     ScrFluencyComponent,
     ScrInfoComponent,
@@ -43,5 +42,9 @@ export class ScrMainComponent {
     if (typeof window !== 'undefined') {
       ScreenSupport.setCurrentScreen(Screens.Main);
     }
+  }
+
+  ngAfterViewChecked() {
+    ScreenSupport.setCurrentComponent(this);
   }
 }
