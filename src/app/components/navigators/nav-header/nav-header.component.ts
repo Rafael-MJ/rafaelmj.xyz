@@ -83,16 +83,4 @@ export class NavHeaderComponent {
       this.htmlElements[i].nativeElement.classList.remove('enabled');
     }
   }
-
-  enableEffect(index: number) {
-    for (let i = 0; i < this.htmlElements.length; i++) {
-      const element = this.htmlElements[i].nativeElement;
-
-      if (i === index) {
-        element.classList.add('enabled');
-      } else {
-        element.classList.remove('enabled');
-      }
-    }
-  }
 }
