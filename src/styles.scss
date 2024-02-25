@@ -33,13 +33,20 @@ body {
   min-width: 380px;
   text-align: justify !important;
   background-color: #000;
-  border-width: 2px;
+  border: 2px solid;
   border-radius: 2px;
-  border-style: solid;
   border-image: linear-gradient(to bottom, $color-purple, rgba(0, 0, 0, 0)) 1 100%;
   transition:
     all 0.6s ease,
     border-image 0.6s ease;
+}
+
+.card-solid {
+  min-width: 380px;
+  text-align: justify !important;
+  background-color: #000;
+  border: 1px solid $color-gray;
+  border-radius: 10px;
 }
 
 // Only Browser
