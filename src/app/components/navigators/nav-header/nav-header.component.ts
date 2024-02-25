@@ -13,9 +13,9 @@ import { ScrCurriculumComponent } from '../../screens/scr-curriculum/scr-curricu
   styleUrls: ['./nav-header.component.scss'],
 })
 export class NavHeaderComponent {
-  @ViewChildren('n0, n1, n2, n3') elementos!: QueryList<ElementRef>;
+  @ViewChildren('hMain, hAbout, hKnowledge, hSkills, hFluency, hInfo, hCV')
+  elementos!: QueryList<ElementRef>;
 
-  private currentScreenComponent?: ScrMainComponent | ScrCurriculumComponent;
   htmlElements: ElementRef[] = [];
 
   ngAfterViewInit() {
@@ -32,7 +32,7 @@ export class NavHeaderComponent {
         this.htmlElements[0].nativeElement.classList.add('enabled');
         break;
       case Screens.Curriculum:
-        this.htmlElements[1].nativeElement.classList.add('enabled');
+        this.htmlElements[this.htmlElements.length - 1].nativeElement.classList.add('enabled');
         break;
     }
   }
