@@ -1,7 +1,7 @@
 <nav class="navigator navbar border-bottom navbar-expand-md z-1" data-bs-theme="dark">
   <div class="container-fluid fs-5">
     <a class="d-md-none" routerLink="/main">
-      <img id="me-icon" src="../../assets/me/me-icon.png" alt="" />
+      <img id="me-icon" class="p-2" src="../../../../assets/general/me.png" alt="" />
     </a>
     <div ngbDropdown class="dropdown d-md-none">
       <button
@@ -11,7 +11,11 @@
         id="dropdownMenuBtn"
         aria-expanded="false"
       >
-        ⛬
+        <img
+          class="mx-1 p-1 menu-symbol"
+          src="../../../../assets/symbols/menu-symbol.svg"
+          alt="menu"
+        />
       </button>
       <ul class="dropdown-menu-end" ngbDropdownMenu>
         <li><a ngbDropdownItem routerLink="/main">INÍCIO</a></li>

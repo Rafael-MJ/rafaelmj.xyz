@@ -51,6 +51,15 @@ h3 {
   }
 }
 
-.pulse {
+#pulse,
+#pulse-secondary {
   animation: pulse 2s ease-in-out infinite;
+}
+
+#pulse {
+  width: 3.5vh;
+}
+
+#pulse-secondary {
+  width: 2.5vh;
 }
