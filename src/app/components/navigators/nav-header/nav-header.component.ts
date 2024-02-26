@@ -32,7 +32,7 @@ export class NavHeaderComponent {
       case Screens.Main:
         this.htmlElements[0].nativeElement.classList.add('enabled');
         break;
-      default:
+      case Screens.Curriculum:
         this.htmlElements[this.htmlElements.length - 1].nativeElement.classList.add('enabled');
         break;
     }
