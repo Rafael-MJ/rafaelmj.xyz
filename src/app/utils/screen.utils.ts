@@ -14,6 +14,8 @@ export enum Screens {
 const screenOrder = Object.values(Screens); // 'enum Screens' array (same declarated order).
 
 let currentScreen: Screens | null;
+
+// TODO: isMainComponent (remove curriculum)
 let currentComponent: ScrMainComponent | ScrCurriculumComponent;
 
 export class ScreenSupport {
