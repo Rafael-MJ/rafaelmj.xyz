@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 import { commonModuleUtils } from 'src/app/utils/routing.utils';
 
 @Component({
-  selector: 'app-scr-fluency',
+  selector: 'app-con-fluency',
   standalone: true,
   imports: [commonModuleUtils],
-  templateUrl: './scr-fluency.component.html',
-  styleUrl: './scr-fluency.component.scss',
+  templateUrl: './con-fluency.component.html',
+  styleUrl: './con-fluency.component.scss',
 })
-export class ScrFluencyComponent {}
+export class ConFluencyComponent {}

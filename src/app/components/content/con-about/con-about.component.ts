@@ -6,10 +6,10 @@ import { GenArrowsComponent } from '../../general/gen-arrows/gen-arrows.componen
 import { GenInfoComponent } from '../../general/gen-info/gen-info.component';
 
 @Component({
-  selector: 'app-scr-about',
+  selector: 'app-con-about',
   standalone: true,
   imports: [commonModuleUtils, GenArrowsComponent, GenInfoComponent],
-  templateUrl: './scr-about.component.html',
-  styleUrls: ['./scr-about.component.scss'],
+  templateUrl: './con-about.component.html',
+  styleUrls: ['./con-about.component.scss'],
 })
-export class ScrAboutComponent {}
+export class ConAboutComponent {}

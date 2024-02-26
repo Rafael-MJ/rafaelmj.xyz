@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ScrInfoComponent } from './scr-info.component';
+import { ConAboutComponent } from './con-about.component';
 
-describe('ScrInfoComponent', () => {
-  let component: ScrInfoComponent;
-  let fixture: ComponentFixture<ScrInfoComponent>;
+describe('ConAboutComponent', () => {
+  let component: ConAboutComponent;
+  let fixture: ComponentFixture<ConAboutComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ScrInfoComponent],
+      declarations: [ConAboutComponent],
     });
-    fixture = TestBed.createComponent(ScrInfoComponent);
+    fixture = TestBed.createComponent(ConAboutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

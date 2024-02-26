@@ -5,24 +5,23 @@ import { ScreenSupport, Screens } from 'src/app/utils/screen.utils';
 
 import { GenArrowsComponent } from '../../general/gen-arrows/gen-arrows.component';
 import { GenDeviconsComponent } from '../../general/gen-devicons/gen-devicons.component';
-import { ScrKnowledgeComponent } from '../scr-knowledge/scr-knowledge.component';
-import { ScrSkillsComponent } from '../scr-skills/scr-skills.component';
 import { GenInfoComponent } from '../../general/gen-info/gen-info.component';
-import { ScrAboutComponent } from '../scr-about/scr-about.component';
-import { ScrInfoComponent } from '../scr-info/scr-info.component';
-import { ScrFluencyComponent } from '../scr-fluency/scr-fluency.component';
-import { NavHeaderComponent } from '../../navigators/nav-header/nav-header.component';
+import { ConAboutComponent } from '../../content/con-about/con-about.component';
+import { ConFluencyComponent } from '../../content/con-fluency/con-fluency.component';
+import { ConInfoComponent } from '../../content/con-info/con-info.component';
+import { ConKnowledgeComponent } from '../../content/con-knowledge/con-knowledge.component';
+import { ConSkillsComponent } from '../../content/con-skills/con-skills.component';
 
 @Component({
   selector: 'app-scr-main',
   standalone: true,
   imports: [
     commonModuleUtils,
-    ScrAboutComponent,
-    ScrFluencyComponent,
-    ScrInfoComponent,
-    ScrKnowledgeComponent,
-    ScrSkillsComponent,
+    ConAboutComponent,
+    ConFluencyComponent,
+    ConInfoComponent,
+    ConKnowledgeComponent,
+    ConSkillsComponent,
     GenArrowsComponent,
     GenDeviconsComponent,
     GenInfoComponent,

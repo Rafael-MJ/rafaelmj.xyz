@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ScrFluencyComponent } from './scr-fluency.component';
+import { ConFluencyComponent } from './con-fluency.component';
 
-describe('ScrFluencyComponent', () => {
-  let component: ScrFluencyComponent;
-  let fixture: ComponentFixture<ScrFluencyComponent>;
+describe('ConFluencyComponent', () => {
+  let component: ConFluencyComponent;
+  let fixture: ComponentFixture<ConFluencyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ScrFluencyComponent],
+      imports: [ConFluencyComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ScrFluencyComponent);
+    fixture = TestBed.createComponent(ConFluencyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
