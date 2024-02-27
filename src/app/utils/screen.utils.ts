@@ -1,5 +1,5 @@
-import { ScrCurriculumComponent } from '../components/screens/scr-curriculum/scr-curriculum.component';
-import { ScrMainComponent } from '../components/screens/scr-main/scr-main.component';
+import { CurriculumComponent } from '../components/screens/curriculum/curriculum.component';
+import { MainComponent } from '../components/screens/main/main.component';
 
 export enum ScreensSide {
   Left,
@@ -16,10 +16,10 @@ const screenOrder = Object.values(Screens); // 'enum Screens' array (same declar
 let currentScreen: Screens | null;
 
 // TODO: isMainComponent (remove curriculum)
-let currentComponent: ScrMainComponent | ScrCurriculumComponent;
+let currentComponent: MainComponent | CurriculumComponent;
 
 export class ScreenSupport {
-  public static setCurrentComponent(component: ScrMainComponent | ScrCurriculumComponent) {
+  public static setCurrentComponent(component: MainComponent | CurriculumComponent) {
     currentComponent = component;
   }
 
