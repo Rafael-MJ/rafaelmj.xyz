@@ -1,5 +1,12 @@
 @import 'src/app/utils/style.utils.scss';
 
+@media only screen and (hover: hover) and (pointer: fine) {
+  #btn-download:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+  }
+}
+
 nav {
   min-height: 450px;
 }
@@ -11,6 +18,7 @@ nav {
 
 #btn-download {
   background-color: $color-purple;
+  transition: all 0.5s ease;
 }
 
 #btn-download:hover {
