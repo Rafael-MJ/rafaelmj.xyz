@@ -16,6 +16,7 @@ export class NotfoundComponent {
   ngOnInit() {
     if (typeof window !== 'undefined') {
       ScreenSupport.setCurrentScreen(null);
+      window.scrollTo(0, 0);
     }
   }
 }
