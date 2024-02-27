@@ -1,7 +1,6 @@
 @import '../../../utils/style.utils.scss';
 
 .info-back {
-  position: fixed;
   right: 0;
   bottom: 15vh;
 }
@@ -9,7 +8,6 @@
 .project-info {
   min-height: 10vh;
   font-size: smaller;
-  font-weight: 500;
   border-radius: 3px 0 0 3px;
   background: linear-gradient(to right, $color-light-purple, $color-dark-purple);
 }

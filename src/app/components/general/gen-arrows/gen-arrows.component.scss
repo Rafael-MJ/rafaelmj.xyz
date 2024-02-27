@@ -6,7 +6,6 @@
   .arrow-right:hover {
     background: $color-dark-purple !important;
     transform: scale(1.1);
-    border: none;
     transition: all 0.5s ease;
   }
 }
@@ -19,9 +18,7 @@
 .arrow-left,
 .arrow-right {
   background-color: $color-dark-purple !important;
-  border: none;
   border-radius: 3px;
-  font-weight: bold;
   transition: all 0.5s ease;
 }
 

@@ -1,4 +1,4 @@
-<nav class="navigator navbar border-bottom navbar-expand-md z-1" data-bs-theme="dark">
+<nav class="navigator navbar p-0 border-bottom navbar-expand-md z-1" data-bs-theme="dark">
   <div class="container-fluid fs-5">
     <a class="d-md-none" routerLink="/main">
       <img id="me-icon" class="p-2" src="../../../../assets/general/me.png" alt="" />
@@ -51,10 +51,10 @@
       <div class="offcanvas-body">
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item position-relative">
               <a #hMain routerLink="/main" class="nav-link">INÍCIO</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item position-relative">
               <a
                 #hAbout
                 *ngIf="showMainElements"
@@ -62,9 +62,9 @@
                 class="nav-link"
                 >SOBRE</a
               >
-              <span></span>
+              <span class="h-100 position-absolute"></span>
             </li>
-            <li class="nav-item">
+            <li class="nav-item position-relative">
               <a
                 #hKnowledge
                 *ngIf="showMainElements"
@@ -72,9 +72,9 @@
                 class="nav-link"
                 >COMPETÊNCIAS</a
               >
-              <span></span>
+              <span class="h-100 position-absolute"></span>
             </li>
-            <li class="nav-item">
+            <li class="nav-item position-relative">
               <a
                 #hSkills
                 *ngIf="showMainElements"
@@ -82,9 +82,9 @@
                 class="nav-link"
                 >HABILIDADES</a
               >
-              <span></span>
+              <span class="h-100 position-absolute"></span>
             </li>
-            <li class="nav-item">
+            <li class="nav-item position-relative">
               <a
                 #hFluency
                 *ngIf="showMainElements"
@@ -92,9 +92,9 @@
                 class="nav-link"
                 >FLUÊNCIA</a
               >
-              <span></span>
+              <span class="h-100 position-absolute"></span>
             </li>
-            <li class="nav-item">
+            <li class="nav-item position-relative">
               <a
                 #hInfo
                 *ngIf="showMainElements"
@@ -102,7 +102,7 @@
                 class="nav-link"
                 >INFOS</a
               >
-              <span></span>
+              <span class="h-100 position-absolute"></span>
             </li>
           </ul>
         </div>

@@ -1,13 +1,8 @@
 @import '../../../utils/style.utils.scss';
 
 .navbar {
-  padding: 0px;
   border-color: $color-purple !important;
   background-color: #000;
-}
-
-.nav-item {
-  position: relative;
 }
 
 .nav-link {
@@ -24,18 +19,15 @@
 }
 
 .nav-item span {
-  position: absolute;
   top: -22%;
   width: 92%;
   left: +4%;
   right: -4%;
-  height: 100%;
   z-index: -1;
   border-bottom: 2px solid $color-purple;
   border-radius: 5px;
   transform: scale(0) translateY(50px);
   transition: transform 0.25s ease;
-  opacity: 0;
 }
 
 .nav-item:hover span {
