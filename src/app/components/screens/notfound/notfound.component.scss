@@ -1,0 +1,9 @@
+@import '../../../utils/style.utils.scss';
+
+#btn-back {
+  background-color: $color-purple;
+}
+
+#btn-back:hover {
+  background-color: $color-dark-purple;
+}
