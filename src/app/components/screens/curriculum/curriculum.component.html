@@ -1,25 +1,49 @@
-<div class="d-flex justify-content-center mt-5">
-  <div class="card-solid p-4">
-    <div class="d-flex justify-content-between mb-3">
-      <h4 class="card-title text-light">CURRÍCULO</h4>
+<div class="d-flex d-md-none justify-content-center">
+  <div class="w-75 mt-5">
+    <h2 class="text-white">CURRÍCULO</h2>
+    <p class="text-secondary">
+      Aqui você pode visualizar meu currículo ou salvá-lo diretamente em formato PDF clicando no
+      botão <b>BAIXAR</b>.
+    </p>
+
+    <div class="d-flex">
       <a
         id="btn-download"
-        class="btn btn-secondary align-self-end border-0"
+        class="btn w-50 btn-secondary mx-auto mt-4 border-0"
         href="../../../../assets/general/curriculo-rafael.pdf"
         download="curriculo-rafael.pdf"
       >
         BAIXAR
       </a>
     </div>
-
-    <nav class="col-11 nav mx-auto justify-content-center mb-4">
-      <embed
-        id="curriculum"
-        src="../../../../assets/general/curriculo-rafael.pdf"
-        type="application/pdf"
-      />
-    </nav>
   </div>
+</div>
+
+<div class="d-flex w-50 mx-auto justify-content-center mt-5">
+  <div class="w-25 m-5 d-none d-sm-block d-sm-none d-md-block">
+    <h3 class="text-white">CURRÍCULO</h3>
+    <p class="text-secondary">
+      Aqui você pode visualizar meu currículo ou salvá-lo diretamente em formato PDF clicando no
+      botão <b>BAIXAR</b>.
+    </p>
+
+    <a
+      id="btn-download"
+      class="btn btn-secondary mt-4 px-4 border-0"
+      href="../../../../assets/general/curriculo-rafael.pdf"
+      download="curriculo-rafael.pdf"
+    >
+      BAIXAR
+    </a>
+  </div>
+
+  <nav class="nav justify-content-right mb-4">
+    <embed
+      id="curriculum"
+      src="../../../../assets/general/curriculo-rafael.pdf"
+      type="application/pdf"
+    />
+  </nav>
 </div>
 
 <app-arrows></app-arrows>
