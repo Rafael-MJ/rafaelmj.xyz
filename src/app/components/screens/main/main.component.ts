@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild, ViewChildren } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 import { commonModuleUtils } from 'src/app/utils/routing.utils';
 import { ScreenSupport, Screens } from 'src/app/utils/screen.utils';
