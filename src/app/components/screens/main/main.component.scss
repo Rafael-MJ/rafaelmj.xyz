@@ -1,12 +1,14 @@
-.bg {
-  color: #fff;
-  height: 85vh;
+.bg,
+#bg-image {
+  height: 84vh;
   max-height: 1200px;
 }
 
+.bg {
+  color: #fff;
+}
+
 #bg-image {
-  height: 85vh;
-  max-height: 1200px;
   object-fit: cover;
   filter: blur(8px);
 }
@@ -48,4 +50,11 @@ h3 {
 
 #pulse-secondary {
   width: 2.5vh;
+}
+
+@media (hover: none) and (pointer: coarse) and (orientation: landscape) {
+  .centered {
+    transform: scale(0.5) translate(-50%, -50%);
+    transform-origin: top left;
+  }
 }
