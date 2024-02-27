@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
-import { AppCommonModule } from './app.common.module';
+import { HeaderComponent } from './components/navigators/header/header.component';
+import { FooterComponent } from './components/navigators/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterLink, RouterOutlet, AppCommonModule],
+  imports: [RouterLink, RouterOutlet, HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
 })
-export class AppComponent {
-  title = 'rafael-mj';
-  footerUrl = 'https://www.rafaelmj.xyz';
-  footerLink = 'www.rafaelmj.xyz';
-}
+export class AppComponent {}

@@ -1,0 +1,51 @@
+.bg {
+  color: #fff;
+  height: 85vh;
+  max-height: 1200px;
+}
+
+#bg-image {
+  height: 85vh;
+  max-height: 1200px;
+  object-fit: cover;
+  filter: blur(8px);
+}
+
+.centered {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#pulse,
+#pulse-secondary {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+#pulse {
+  width: 3.5vh;
+}
+
+#pulse-secondary {
+  width: 2.5vh;
+}

@@ -1,12 +1,8 @@
 import { Routes } from '@angular/router';
 
-import { ScrAboutComponent } from './components/screens/scr-about/scr-about.component';
-import { ScrSkillsComponent } from './components/screens/scr-skills/scr-skills.component';
-import { ScrKnowledgeComponent } from './components/screens/scr-knowledge/scr-knowledge.component';
-import { ScrInfoComponent } from './components/screens/scr-info/scr-info.component';
-import { ScrNotfoundComponent } from './components/screens/scr-notfound/scr-notfound.component';
-import { ScrCurriculumComponent } from './components/screens/scr-curriculum/scr-curriculum.component';
-import { ScrMainComponent } from './components/screens/scr-main/scr-main.component';
+import { NotfoundComponent } from './components/screens/notfound/notfound.component';
+import { CurriculumComponent } from './components/screens/curriculum/curriculum.component';
+import { MainComponent } from './components/screens/main/main.component';
 
 export const routes: Routes = [
   {
@@ -17,28 +13,12 @@ export const routes: Routes = [
 
   {
     path: 'main',
-    component: ScrMainComponent,
-  },
-  {
-    path: 'about',
-    component: ScrAboutComponent,
-  },
-  {
-    path: 'skills',
-    component: ScrSkillsComponent,
-  },
-  {
-    path: 'knowledge',
-    component: ScrKnowledgeComponent,
-  },
-  {
-    path: 'infos',
-    component: ScrInfoComponent,
+    component: MainComponent,
   },
   {
     path: 'curriculum',
-    component: ScrCurriculumComponent,
+    component: CurriculumComponent,
   },
 
-  { path: '**', component: ScrNotfoundComponent },
+  { path: '**', component: NotfoundComponent },
 ];

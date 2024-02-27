@@ -1,0 +1,36 @@
+@import '../../../utils/style.utils.scss';
+
+/* Only NOT Mobile */
+@media only screen and (hover: hover) and (pointer: fine) {
+  .arrow-left:hover,
+  .arrow-right:hover {
+    background: $color-dark-purple !important;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+  }
+}
+
+.arrow-column {
+  min-width: 150px;
+  max-width: 10vw;
+}
+
+.arrow-left,
+.arrow-right {
+  background-color: $color-dark-purple !important;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+}
+
+.arrow-left {
+  background: linear-gradient(90deg, $color-light-purple 0%, $color-dark-purple 100%);
+}
+
+.arrow-right {
+  background: linear-gradient(90deg, $color-dark-purple 0%, $color-light-purple 100%);
+}
+
+.arrow-left:disabled,
+.arrow-right:disabled {
+  background: $color-gray !important;
+}

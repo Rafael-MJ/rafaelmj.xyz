@@ -1,0 +1,52 @@
+@import '../../../utils/style.utils.scss';
+
+.navbar {
+  border-color: $color-purple !important;
+  background-color: #000;
+}
+
+.nav-link {
+  transition: 0.5s;
+}
+
+.nav-link:focus {
+  color: none !important;
+}
+
+.nav-link:hover {
+  color: $color-purple !important;
+  cursor: pointer;
+}
+
+.nav-item span {
+  top: -22%;
+  width: 92%;
+  left: +4%;
+  right: -4%;
+  z-index: -1;
+  border-bottom: 2px solid $color-purple;
+  border-radius: 5px;
+  transform: scale(0) translateY(50px);
+  transition: transform 0.25s ease;
+}
+
+.nav-item:hover span {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+.enabled {
+  color: #fff !important;
+}
+
+.container-fluid {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#me-icon {
+  max-height: 3.5em;
+}
+
+.menu-symbol {
+  width: 28px;
+}

@@ -1,0 +1,12 @@
+@import '../../../utils/style.utils.scss';
+
+.footer {
+  border-color: $color-purple !important;
+  height: $screen-nav-size;
+  max-width: $screen-max-width;
+  padding: 10px;
+}
+
+#logo {
+  max-height: 2.5em;
+}
