@@ -40,6 +40,7 @@ export class MainComponent {
   ngOnInit() {
     if (typeof window !== 'undefined') {
       ScreenSupport.setCurrentScreen(Screens.Main);
+      window.scrollTo(0, 0);
     }
   }
 

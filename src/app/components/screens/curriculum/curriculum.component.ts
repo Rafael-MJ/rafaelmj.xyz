@@ -17,6 +17,7 @@ export class CurriculumComponent {
   ngOnInit() {
     if (typeof window !== 'undefined') {
       ScreenSupport.setCurrentScreen(Screens.Curriculum);
+      window.scrollTo(0, 0);
     }
   }
 
