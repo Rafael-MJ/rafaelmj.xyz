@@ -52,7 +52,7 @@ h3 {
   width: 2.5vh;
 }
 
-@media (hover: none) and (pointer: coarse) and (orientation: landscape) {
+@media only screen and (hover: none) and (orientation: landscape) {
   .centered {
     transform: scale(0.5) translate(-50%, -50%);
     transform-origin: top left;
