@@ -1,23 +1,30 @@
-@keyframes rotateThis {
-  from {
-    transform: scale(1.5) rotate(0deg);
+@keyframes rotate-right {
+  0% {
+    transform: scale(1) rotate(0deg);
   }
-  to {
-    transform: scale(1.5) rotate(360deg);
+  100% {
+    transform: scale(1.4) rotate(360deg);
+  }
+}
+
+@keyframes rotate-left {
+  0% {
+    transform: scale(1.4) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(-360deg);
   }
 }
 
 .animated-icon {
   height: 50px;
   width: 50px;
+  animation: rotate-left 0.6s forwards;
 }
 
 .animated-icon:hover {
-  animation-name: rotateThis;
-  animation-duration: 1.25s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
   cursor: grabbing;
+  animation: rotate-right 0.6s forwards;
 }
 
 nav {
