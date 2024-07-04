@@ -1,3 +1,5 @@
+@import 'src/app/utils/style.utils.scss';
+
 @property --d {
   syntax: '<angle>';
   inherits: true;
@@ -32,8 +34,8 @@
   position: absolute;
   inset: -100px;
   background:
-      radial-gradient(180px at left 150px top 120px, #d121fd 98%, #0000),
-      radial-gradient(180px at right 150px bottom 120px, #21d3ff 98%, #0000);
+      radial-gradient(180px at left 150px top 120px, $color-light-purple 98%, #0000),
+      radial-gradient(180px at right 150px bottom 120px, $color-light-blue 98%, #0000);
   filter: blur(60px);
   opacity: .5;
   transition: .5s, 99999s 99999s transform, 99999s 99999s --d;
