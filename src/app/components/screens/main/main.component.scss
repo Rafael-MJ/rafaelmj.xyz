@@ -19,6 +19,7 @@
 
 .neon-div {
   width: 240px;
+  max-height: 90vh;
   aspect-ratio: 0.35;
   align-items: center;
   justify-content: center;
@@ -30,6 +31,7 @@
 }
 
 .neon-div:after {
+  max-height: 90vh;
   content: "";
   position: absolute;
   inset: -100px;
