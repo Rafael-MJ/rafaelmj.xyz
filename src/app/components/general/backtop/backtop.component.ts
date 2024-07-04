@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { commonModuleUtils } from 'src/app/utils/routing.utils';
 
 @Component({
   selector: 'app-backtop',
   standalone: true,
-  imports: [],
+  imports: [commonModuleUtils],
   templateUrl: './backtop.component.html',
   styleUrl: './backtop.component.scss'
 })
