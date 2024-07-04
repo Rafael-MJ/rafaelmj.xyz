@@ -1,16 +1,52 @@
-.bg,
-#bg-image {
+@property --d {
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+
+@keyframes rotateGlow {
+  0% {
+      --d: 0deg;
+      transform: rotate(0deg);
+  }
+  100% {
+      --d: 3600deg;
+      transform: rotate(3600deg);
+  }
+}
+
+.neon-div {
+  width: 240px;
+  aspect-ratio: 0.35;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 0;
+  transition: .3s;
+}
+
+.neon-div:after {
+  content: "";
+  position: absolute;
+  inset: -100px;
+  background:
+      radial-gradient(180px at left 150px top 120px, #d121fd 98%, #0000),
+      radial-gradient(180px at right 150px bottom 120px, #21d3ff 98%, #0000);
+  filter: blur(60px);
+  opacity: .5;
+  transition: .5s, 99999s 99999s transform, 99999s 99999s --d;
+  animation: rotateGlow 62s linear infinite;
+}
+
+.bg {
   height: 84vh;
   max-height: 1200px;
 }
 
 .bg {
   color: #fff;
-}
-
-#bg-image {
-  object-fit: cover;
-  filter: blur(8px);
 }
 
 .centered {

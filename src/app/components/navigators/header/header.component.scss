@@ -1,8 +1,7 @@
 @import '../../../utils/style.utils.scss';
 
 .navbar {
-  border-color: $color-purple !important;
-  background-color: #000;
+  background: none;
 }
 
 .nav-link:focus {
