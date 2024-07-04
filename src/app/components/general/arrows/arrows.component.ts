@@ -102,8 +102,4 @@ export class ArrowsComponent {
     this.initData();
     this.checkDisabledArrows();
   }
-
-  scrollToTop() {
-    window.scrollTo(0, 0);
-  }
 }

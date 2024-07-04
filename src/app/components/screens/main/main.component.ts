@@ -11,6 +11,7 @@ import { FluencyComponent } from '../../content/fluency/fluency.component';
 import { InfoComponent } from '../../content/info/info.component';
 import { KnowledgeComponent } from '../../content/knowledge/knowledge.component';
 import { SkillsComponent } from '../../content/skills/skills.component';
+import { BacktopComponent } from '../../general/backtop/backtop.component';
 
 @Component({
   selector: 'app-main',
@@ -22,6 +23,7 @@ import { SkillsComponent } from '../../content/skills/skills.component';
     InfoComponent,
     KnowledgeComponent,
     SkillsComponent,
+    BacktopComponent,
     ArrowsComponent,
     DeviconsComponent,
     InfopopupComponent,
