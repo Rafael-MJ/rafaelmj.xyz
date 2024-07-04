@@ -17,10 +17,6 @@ nav {
 }
 
 #btn-download {
-  background-color: $color-purple;
+  background: linear-gradient(90deg, $color-dark-purple, $color-light-purple, $color-dark-purple);
   transition: all 0.5s ease;
-}
-
-#btn-download:hover {
-  background-color: $color-dark-purple;
 }
