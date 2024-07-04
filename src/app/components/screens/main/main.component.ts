@@ -3,7 +3,6 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { commonModuleUtils } from 'src/app/utils/routing.utils';
 import { ScreenSupport, Screens } from 'src/app/utils/screen.utils';
 
-import { ArrowsComponent } from '../../general/arrows/arrows.component';
 import { DeviconsComponent } from '../../general/devicons/devicons.component';
 import { InfopopupComponent } from '../../general/infopopup/infopopup.component';
 import { AboutComponent } from '../../content/about/about.component';
@@ -24,7 +23,6 @@ import { BacktopComponent } from '../../general/backtop/backtop.component';
     KnowledgeComponent,
     SkillsComponent,
     BacktopComponent,
-    ArrowsComponent,
     DeviconsComponent,
     InfopopupComponent,
   ],
