@@ -30,8 +30,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, $color-purple 18%, $color-light-blue, $color-purple 82%);
-  border: 1px solid $color-dark-purple;
+  background-color: $color-bg;
   border-radius: 5px;
 }
 
