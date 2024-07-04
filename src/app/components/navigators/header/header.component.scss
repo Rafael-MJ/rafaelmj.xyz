@@ -38,10 +38,17 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
-#me-icon {
-  max-height: 3.5em;
-}
-
 .menu-symbol {
   width: 28px;
+}
+
+#dropdown {
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  backdrop-filter: blur(35px);
+}
+
+#me-icon {
+  max-height: 3.5em;
 }
