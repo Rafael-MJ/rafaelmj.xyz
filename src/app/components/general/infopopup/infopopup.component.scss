@@ -15,7 +15,7 @@
 .info-icon {
   min-height: 8.5vh;
   width: 8vh;
-  background-color: $color-purple;
+  background: linear-gradient(to right, $color-light-purple, $color-dark-purple);
   border-radius: 20px 0 0 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 700;
