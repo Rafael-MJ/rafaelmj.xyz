@@ -45,8 +45,9 @@
 }
 
 .bg {
-  height: 84vh;
+  height: 85vh;
   max-height: 1200px;
+  margin-bottom: 12vh;
 }
 
 .bg {
@@ -77,6 +78,13 @@ h3 {
   100% {
     transform: scale(1);
   }
+}
+
+.arrows {
+  z-index: 4;
+  top: 92vh;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #pulse,
