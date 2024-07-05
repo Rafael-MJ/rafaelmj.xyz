@@ -24,6 +24,10 @@
   transition: all 0.5s;
 }
 
+.txt-shadow {
+  text-shadow: 1px 1px #000;
+}
+
 @media only screen and (hover: hover) and (pointer: fine) {
   .info-icon:hover {
     background-color: $color-dark-purple;
