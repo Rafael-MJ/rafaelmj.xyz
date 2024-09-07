@@ -46,7 +46,7 @@ body {
 }
 
 .card {
-  min-width: 380px;
+  min-width: 285px;
   text-align: justify !important;
   background-color: $color-dark-gray;
   transition: all 0.25s;
@@ -78,7 +78,8 @@ body {
 // Only Mobile
 
 @media screen and (max-width: 768px) {
-  .btn-primary {
+  .btn-primary,
+  .btn-primary:hover {
     background: $color-light-purple;
     border: none;
   }
