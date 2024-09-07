@@ -62,7 +62,7 @@ body {
   width: 150px;
   font-size: small;
   background: none;
-  border: 2px solid $color-light-purple !important;
+  border: 1px solid $color-light-purple !important;
   transition: all 0.5s ease;
 }
 
@@ -84,8 +84,7 @@ body {
 
   .btn-primary:hover {
     background: $color-light-purple;
-    transform: scale(1.08);
-    transition: all 0.5s ease;
+    transition: all 0.75s ease;
   }
 }
 
