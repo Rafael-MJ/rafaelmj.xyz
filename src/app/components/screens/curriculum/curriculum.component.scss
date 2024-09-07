@@ -8,19 +8,12 @@
 
 @keyframes rotateGlow {
   0% {
-      --d: 0deg;
-      transform: rotate(0deg);
+    --d: 0deg;
+    transform: rotate(0deg);
   }
   100% {
-      --d: -3600deg;
-      transform: rotate(-3600deg);
-  }
-}
-
-@media only screen and (hover: hover) and (pointer: fine) {
-  #btn-download:hover {
-    transform: scale(1.1);
-    transition: all 0.5s ease;
+    --d: -3600deg;
+    transform: rotate(-3600deg);
   }
 }
 
@@ -34,20 +27,22 @@
   border: none;
   position: relative;
   z-index: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .neon-div:after {
   max-height: 65vh;
-  content: "";
+  content: '';
   position: absolute;
   inset: -100px;
-  background:
-      radial-gradient(180px at left 150px top 120px, $color-light-purple 98%, #0000),
-      radial-gradient(180px at right 150px bottom 120px, $color-light-blue 98%, #0000);
+  background: radial-gradient(180px at left 150px top 120px, $color-light-purple 98%, #0000),
+    radial-gradient(180px at right 150px bottom 120px, $color-light-blue 98%, #0000);
   filter: blur(80px);
-  opacity: .5;
-  transition: .5s, 99999s 99999s transform, 99999s 99999s --d;
+  opacity: 0.5;
+  transition:
+    0.5s,
+    99999s 99999s transform,
+    99999s 99999s --d;
   animation: rotateGlow 100s linear infinite;
 }
 
@@ -66,9 +61,4 @@ nav {
 #curriculum {
   max-width: 95vw;
   max-height: 95vh;
-}
-
-#btn-download {
-  background: linear-gradient(90deg, $color-dark-purple, $color-light-purple, $color-dark-purple);
-  transition: all 0.5s ease;
 }
