@@ -9,6 +9,7 @@
   min-height: 10vh;
   font-size: smaller;
   background: $color-dark-gray;
+  border-radius: 3px 0 0 3px;
 }
 
 .project-info-border {
@@ -33,7 +34,6 @@
 
 .txt-shadow {
   font-size: medium;
-  text-shadow: 1px 1px #000;
 }
 
 @media only screen and (hover: hover) and (pointer: fine) {
