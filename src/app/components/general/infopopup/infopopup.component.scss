@@ -1,0 +1,44 @@
+@import '../../../utils/style.utils.scss';
+
+.info-back {
+  right: 0;
+  bottom: 15vh;
+}
+
+.project-info {
+  min-height: 10vh;
+  font-size: smaller;
+  background: $color-dark-gray;
+}
+
+.project-info-border {
+  position: relative;
+  background: linear-gradient(to right, $color-dark-purple, $color-light-purple);
+  border-radius: 3px 0 0 3px;
+  padding: 3px;
+}
+
+.info-icon {
+  min-height: 8.5vh;
+  min-width: 50px;
+  width: 8vh;
+  background: linear-gradient(to right, $color-light-purple, $color-dark-purple);
+  border-radius: 20px 0 0 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: xx-large;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.txt-shadow {
+  font-size: medium;
+  text-shadow: 1px 1px #000;
+}
+
+@media only screen and (hover: hover) and (pointer: fine) {
+  .info-icon:hover {
+    background-color: $color-dark-purple;
+    transition: all 0.5s;
+  }
+}

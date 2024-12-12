@@ -1,0 +1,15 @@
+@import '../../../utils/style.utils.scss';
+
+.footer {
+  height: $screen-nav-size;
+  max-width: $screen-max-width;
+  padding: 10px;
+}
+
+#logo {
+  max-height: 2em;
+}
+
+a {
+  font-family: 'geo';
+}

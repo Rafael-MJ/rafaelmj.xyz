@@ -1,0 +1,110 @@
+@import '../src/app/utils/style.utils.scss';
+
+@font-face {
+  font-family: 'Geo';
+  src: url('assets/fonts/Geo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Iceland';
+  src: url('assets/fonts/Iceland.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Default Elements
+
+* {
+  user-select: none;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  max-width: $screen-max-width;
+  margin: 0 auto;
+  background-color: #000;
+  padding-bottom: $screen-nav-size;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px $color-gray;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-dark-gray;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
+// Custom Elements
+
+.navigator {
+  height: $screen-nav-size;
+}
+
+.card {
+  min-width: 285px;
+  text-align: justify !important;
+  background-color: $color-dark-gray;
+  transition: all 0.25s;
+}
+
+.btn-primary {
+  width: 150px;
+  font-size: small;
+  background: none;
+  border: 1px solid $color-light-purple !important;
+  transition: all 0.5s ease;
+}
+
+// Fonts
+
+.f-iceland {
+  font-family: 'Iceland';
+}
+
+.f-geo {
+  font-family: 'Geo';
+}
+
+// Only Browser
+
+@media only screen and (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: scale(1.02);
+    transition: all 0.25s;
+    cursor: default;
+  }
+
+  .btn-primary:hover {
+    background: $color-light-purple;
+    transition: all 0.75s ease;
+  }
+}
+
+// Only Mobile
+
+@media screen and (max-width: 768px) {
+  .btn-primary,
+  .btn-primary:hover {
+    background: $color-light-purple;
+    border: none;
+  }
+}

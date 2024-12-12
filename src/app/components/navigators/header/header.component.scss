@@ -1,0 +1,59 @@
+@import '../../../utils/style.utils.scss';
+
+.navbar {
+  background: none;
+}
+
+a {
+  font-size: larger;
+  font-family: 'geo';
+}
+
+.nav-link:focus {
+  color: none !important;
+}
+
+.nav-link:hover {
+  color: $color-purple !important;
+  cursor: pointer;
+}
+
+.nav-item span {
+  top: -22%;
+  width: 92%;
+  left: +4%;
+  right: -4%;
+  z-index: -1;
+  border-bottom: 2px solid $color-purple;
+  border-radius: 5px;
+  transform: scale(0) translateY(50px);
+  transition: transform 0.25s ease;
+}
+
+.nav-item:hover span {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+.enabled {
+  color: #fff !important;
+}
+
+.container-fluid {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.menu-symbol {
+  width: 28px;
+}
+
+#dropdown {
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  backdrop-filter: blur(35px);
+}
+
+#me-icon {
+  max-height: 3.5em;
+}

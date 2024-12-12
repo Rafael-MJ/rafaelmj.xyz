@@ -1,0 +1,106 @@
+@import 'src/app/utils/style.utils.scss';
+
+@property --d {
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+
+@keyframes rotateGlow {
+  0% {
+    --d: 0deg;
+    transform: rotate(0deg);
+  }
+  100% {
+    --d: 3600deg;
+    transform: rotate(3600deg);
+  }
+}
+
+.neon-div {
+  width: 240px;
+  max-height: 90vh;
+  aspect-ratio: 0.35;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 0;
+  transition: 0.3s;
+}
+
+.neon-div:after {
+  max-height: 90vh;
+  content: '';
+  position: absolute;
+  inset: -100px;
+  background: radial-gradient(180px at left 150px top 120px, $color-light-purple 98%, #0000),
+    radial-gradient(180px at right 150px bottom 120px, $color-light-blue 98%, #0000);
+  filter: blur(60px);
+  opacity: 0.5;
+  transition:
+    0.5s,
+    99999s 99999s transform,
+    99999s 99999s --d;
+  animation: rotateGlow 62s linear infinite;
+}
+
+.bg {
+  height: 85vh;
+  max-height: 1200px;
+  margin-bottom: 12vh;
+}
+
+.bg {
+  color: #fff;
+}
+
+.centered {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h3 {
+  word-spacing: 6px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.arrows {
+  z-index: 4;
+  top: 92vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#pulse,
+#pulse-secondary {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+#pulse {
+  width: 3.5vh;
+}
+
+#pulse-secondary {
+  width: 2.5vh;
+}
+
+@media only screen and (hover: none) and (orientation: landscape) {
+  .centered {
+    transform: scale(0.5) translate(-50%, -50%);
+    transform-origin: top left;
+  }
+}

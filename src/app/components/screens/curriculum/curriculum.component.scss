@@ -1,0 +1,64 @@
+@import 'src/app/utils/style.utils.scss';
+
+@property --d {
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+
+@keyframes rotateGlow {
+  0% {
+    --d: 0deg;
+    transform: rotate(0deg);
+  }
+  100% {
+    --d: -3600deg;
+    transform: rotate(-3600deg);
+  }
+}
+
+.neon-div {
+  width: 120px;
+  max-height: 65vh;
+  aspect-ratio: 0.15;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 0;
+  transition: 0.3s;
+}
+
+.neon-div:after {
+  max-height: 65vh;
+  content: '';
+  position: absolute;
+  inset: -100px;
+  background: radial-gradient(180px at left 150px top 120px, $color-light-purple 98%, #0000),
+    radial-gradient(180px at right 150px bottom 120px, $color-light-blue 98%, #0000);
+  filter: blur(80px);
+  opacity: 0.5;
+  transition:
+    0.5s,
+    99999s 99999s transform,
+    99999s 99999s --d;
+  animation: rotateGlow 100s linear infinite;
+}
+
+.cv-content {
+  z-index: 1;
+}
+
+.text-secondary {
+  text-shadow: 1px 1px #000;
+}
+
+nav {
+  min-height: 450px;
+}
+
+#curriculum {
+  max-width: 95vw;
+  max-height: 95vh;
+}

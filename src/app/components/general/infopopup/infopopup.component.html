@@ -1,0 +1,19 @@
+<div class="info-back d-flex flex-row-reverse align-items-center position-fixed z-3">
+  <div class="project-info-border" *ngIf="showedInfo">
+    <div class="project-info p-3 d-flex align-items-center">
+      <div class="d-grid f-geo">
+        <div class="txt-shadow text-white text-center mb-1">Ferramentas: Angular e Bootstrap</div>
+        <div class="txt-shadow text-white text-center">
+          Projeto disponível no
+          <a class="text-white" href="https://github.com/rafael-mj/rafaelmj.com" target="_blank">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div (click)="updateInfo()" class="info-icon d-flex align-items-center">
+    <span #InfoIcon class="mx-auto text-white">i</span>
+  </div>
+</div>

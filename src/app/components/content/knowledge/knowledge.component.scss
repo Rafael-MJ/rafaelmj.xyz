@@ -1,0 +1,18 @@
+@import '../../../utils/style.utils.scss';
+
+.card-title {
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card-title::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-image: linear-gradient(to right, $color-dark-purple, $color-light-purple);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
