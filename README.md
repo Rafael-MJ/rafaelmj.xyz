@@ -2,7 +2,7 @@
 
 Este repositório contém o código fonte do meu website pessoal.
 
-[Acesso ao Site](https://rafaelmj.xyz)
+[ACESSE O SITE](https://rafaelmj.com)
 
 # [Dev-Instructions] Angular
 
