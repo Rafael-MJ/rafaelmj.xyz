@@ -12,3 +12,17 @@
 .lvl-none {
   font-weight: 1000;
 }
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+@media only screen and (max-width: 650px) {
+  .content {
+    flex-direction: column;
+    gap: 35px;
+  }
+}
