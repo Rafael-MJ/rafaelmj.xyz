@@ -16,11 +16,9 @@ export class InfopopupComponent {
   updateInfo() {
     if (this.showedInfo) {
       this.showedInfo = false;
-      this.infoIcon.nativeElement.setAttribute('src', 'assets/icons/info.png');
       this.infoIcon.nativeElement.innerText = 'i';
     } else {
       this.showedInfo = true;
-      this.infoIcon.nativeElement.setAttribute('src', 'assets/icons/info-close.png');
       this.infoIcon.nativeElement.innerText = '»';
     }
   }
