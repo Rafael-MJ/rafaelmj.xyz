@@ -6,7 +6,7 @@ import { MainComponent } from '../../screens/main/main.component';
 
 @Component({
   standalone: true,
-  imports: [commonModuleUtils, MainComponent],
+  imports: [commonModuleUtils],
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
